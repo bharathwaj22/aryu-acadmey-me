@@ -166,7 +166,7 @@ function Intership_register() {
     const loader = document.getElementById("global-loader");
     if (loader) loader.style.display = "flex";
 
-    const startTime = Date.now(); 
+    const startTime = Date.now();
     try {
       const response = await axios.post(
         `${API_URL}/api/v1/internship-enquiry`,
@@ -412,6 +412,12 @@ function Intership_register() {
                         </option>
                         <option value="seo">SEO</option>
                         <option value="smm">Social Media Marketing</option>
+                        <option value="ui_frontend">
+                          UI/FrontEnd Development
+                        </option>
+                        <option value="react_js">React JS</option>
+                        <option value="manual_testing">Manual Testing</option>
+
                         {/* <option value="creo">Creo</option> */}
                       </select>
                       <span className="dropdown-arrow">&#9660;</span>

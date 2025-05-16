@@ -63,6 +63,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState, useEffect, useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import PopupModal from './PopupModel.js';
 
 // import { Marquee } from "@devnomic/marquee";
 
@@ -198,6 +199,31 @@ import { useNavigate } from "react-router-dom";
 
 
 function Home() {
+
+  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(true);
+
+  // useEffect(() => {
+  //   // Only show the popup once per session
+  //   const hasSeenPopup = sessionStorage.getItem('seen-home-popup');
+  //   if (!hasSeenPopup) {
+  //     setShowPopup(true);
+  //     sessionStorage.setItem('seen-home-popup', 'true');
+  //   }
+  // }, []);
+  useEffect(() => {
+    const hasSeenPopup = sessionStorage.getItem('seen-home-popup');
+
+    if (!hasSeenPopup) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+        sessionStorage.setItem('seen-home-popup', 'true');
+      }, 7000); // 7 seconds delay
+
+      // Clear the timer if the component unmounts before 7s
+      return () => clearTimeout(timer);
+    }
+  }, []);
   useEffect(() => {
     // Set page title
     document.title =
@@ -682,6 +708,8 @@ function Home() {
     //       }
     //     >
       <section className="">
+      {showPopup && <PopupModal onClose={() => setShowPopup(false)} />}
+
         <Header />
         <section className="p">
           <div className="d-flex flex-wrap pt-5 mt-5">
