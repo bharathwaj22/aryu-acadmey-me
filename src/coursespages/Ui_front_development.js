@@ -49,10 +49,10 @@ import MongoDB from "../assests/images/tools/MongoDB.svg";
 import XAMPP from "../assests/images/tools/XAMPP.svg";
 
 import { useNavigate } from "react-router-dom";
-function Full_stack_development() {
+function Ui_front_development() {
   useEffect(() => {
     // Set page title
-    document.title = "Full Stack development course in Chennai";
+    document.title = "UI / Frontend development course in Chennai";
 
     // Function to dynamically update meta tags
     const setMetaTag = (name, content, isProperty = false) => {
@@ -76,18 +76,18 @@ function Full_stack_development() {
     // Set meta tags
     setMetaTag(
       "description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects."
+      "UI / Frontend Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects."
     );
     setMetaTag(
       "keywords",
-      "Full Stack development course in Chennai, Full Stack developer course in chennai"
+      "UI / Frontend development course in Chennai, UI / Frontend developer course in chennai"
     );
 
     // Set Open Graph meta tags
-    setMetaTag("og:title", "Full Stack development course in Chennai", true);
+    setMetaTag("og:title", "UI / Frontend development course in Chennai", true);
     setMetaTag(
       "og:description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
+      "UI / Frontend Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
       true
     );
     setMetaTag("og:image", ogimg, true);
@@ -101,7 +101,7 @@ function Full_stack_development() {
     );
     setMetaTag(
       "twitter:description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
+      "UI / Frontend Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
       true
     );
     setMetaTag("twitter:image", ogimg, true);
@@ -131,7 +131,7 @@ function Full_stack_development() {
               <h1 className="pt-2 courses-texted">
                 {/* Digital Marketing Course */}
                 <span className="live-projects-text">
-                  Full Stack Development Course{" "}
+                  UI / Frontend Development Course{" "}
                 </span>
                 <br></br>
 
@@ -143,8 +143,8 @@ function Full_stack_development() {
 
               <hr className="border-white w-75"></hr>
               <div className="courses-description pt-3">
-                Get a Full Stack Development Course in Chennai at Aryu academy
-                for your next-level career!
+                Get a UI / Frontend Development Course in Chennai at Aryu
+                academy for your next-level career!
               </div>
               <div>
                 <div className="d-flex  align-items-center  gap-3 mt-5 ">
@@ -162,7 +162,7 @@ function Full_stack_development() {
                 </div>
               </div>
             </div>
-            <Coursesform type={"full_stack_development"}></Coursesform>
+            <Coursesform type={"ui_frontend_development"}></Coursesform>
           </div>
           {/* <div className="d-flex  justify-content-center d-none d-md-flex">
             <div className="courses-training  ">
@@ -332,27 +332,30 @@ function Full_stack_development() {
                   </div>
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  Our Full Stack Development course provides a complete guide to
-                  building dynamic web applications. You’ll master frontend
-                  technologies like HTML, CSS, Bootstrap 5, JavaScript, jQuery,
-                  and React.js to design responsive and interactive user
-                  interfaces. On the backend, you’ll gain hands-on experience
-                  with Node.js, Laravel, CodeIgniter, and Python, enabling you
-                  to build robust server-side applications and APIs.
+                  Our UI/Frontend Development course provides comprehensive
+                  training to help you design and develop responsive, efficient,
+                  and visually engaging web interfaces Starting with web
+                  fundamentals, you'll learn how websites work, structure HTML
+                  content effectively, and apply best practices for
+                  accessibility and SEO. You’ll gain hands-on experience with
+                  CSS3, mastering layout techniques using Flexbox and media
+                  queries to create responsive designs. The course introduces
+                  Bootstrap for building UI components and layouts efficiently.
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  You'll also learn to work with popular databases like MySQL,
-                  PostgreSQL, and MongoDB, mastering data management and
-                  optimization techniques. The course includes valuable lessons
-                  in API integration and app security, equipping you to securely
-                  connect external services and protect your applications.
+                  You’ll progress into JavaScript and ES6+ concepts, learning to
+                  manipulate the DOM, handle events, and manage asynchronous
+                  tasks. jQuery is covered for enhanced interactivity, while
+                  ReactJS takes you deeper into component-based architecture,
+                  hooks, and state management. Projects include PSD to HTML
+                  conversion, responsive design, and React CRUD applications.
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  By the end of the course, you’ll have the skills to customize
-                  and deploy full-stack applications, making you a versatile
-                  developer ready to take on any project. Whether you aim to
-                  build websites or complex web apps, this course helps you
-                  adapt to real-world challenges.
+                  You'll also explore version control with Git, deployment using
+                  GitHub Pages, Netlify, and Heroku, and connect frontend to
+                  databases like MySQL and MongoDB. By the end, you’ll
+                  confidently build full-featured, production-ready web
+                  applications.
                 </div>
               </div>
               <div className="about-training-image pt-0 pt-md-5 ">
@@ -376,30 +379,31 @@ function Full_stack_development() {
               </div>
               <div className="d-flex  flex-wrap  ">
                 <img
+                  title="VisualStudio"
                   src={VisualStudioCode}
                   alt="html"
                   className="Visual Studio Code tools used in Aryu Academy’s Full Stack Development course for writing and debugging code."
                 />
-                <img
+                {/* <img
                   src={Git}
                   alt="css"
                   className="Git tools used in Aryu Academy’s Full Stack Development course for version control and collaboration on projects."
-                />
-                <img
+                /> */}
+                {/* <img
                   src={Postman}
                   alt="Postman tool used in Aryu Academy’s Full Stack Development course for testing APIs and ensuring smooth communication."
                   className="tool-used-image"
-                />
-                <img
+                /> */}
+                {/* <img
                   src={MongoDB}
                   alt="MongoDB tool used in Aryu Academy’s Full Stack Development course for managing & querying databases in JavaScript apps."
                   className="tool-used-image"
-                />
-                <img
+                /> */}
+                {/* <img
                   src={XAMPP}
                   alt="XAMPP tool used in Aryu Academy’s Full Stack Development course for setting up a local server for web development."
                   className="tool-used-image"
-                />
+                /> */}
               </div>
               {/* <div className="d-flex justify-content-center d-lg-none ">
                 <img src={Html} alt="html"className="tool-used-image" />
@@ -544,7 +548,7 @@ function Full_stack_development() {
                           Module 1:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Frontend Development Basics
+                          Web Fundamentals & HTML
                         </Typography>
                       </Typography>
                     </AccordionSummary>
@@ -552,10 +556,16 @@ function Full_stack_development() {
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to HTML, CSS, and Bootstrap 5</li>
-                          <li>Building responsive web pages with Bootstrap</li>
-                          <li>Styling techniques with CSS</li>
-                          <li>HTML structure and elements</li>
+                          <li>
+                            Introduction to Web Technologies (Web, Browser,
+                            Server, Client)
+                          </li>
+                          <li>Understanding HTML Structure & Semantics</li>
+                          <li>Text Elements, Links, Images, Audio, Video</li>
+                          <li>Forms and Input Types</li>
+                          <li>Tables and Iframes</li>
+                          <li>HTML5 Features & Best Practices</li>
+                          <li>Accessibility and SEO Basics</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -574,17 +584,20 @@ function Full_stack_development() {
                           Module 2:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          JavaScript Fundamentals
+                          CSS3 & Styling
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to JavaScript</li>
-                          <li>Variables, data types, and operators</li>
-                          <li>Functions, scope, and closures</li>
-                          <li>Working with objects and arrays</li>
+                          <li>CSS Syntax, Selectors, and Properties</li>
+                          <li>Box Model, Display, Positioning</li>
+                          <li>Typography and Fonts</li>
+                          <li>Backgrounds, Borders, and Pseudo-classes</li>
+                          <li>Flexbox for Layout</li>
+                          <li>Responsive Web Design with Media Queries</li>
+                          <li>CSS Best Practices and Optimization</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -603,23 +616,21 @@ function Full_stack_development() {
                           Module 3:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          React.js for Dynamic Interfaces
+                          Bootstrap & UI Components
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Understanding React.js concepts</li>
-                          <li>State management and React hooks</li>
+                          <li>Introduction to Bootstrap and Setup</li>
+                          <li>Responsive Grid System</li>
+                          <li>Navbar, Buttons, Cards, Forms, and Alerts</li>
+                          <li>Flexbox in Bootstrap</li>
                           <li>
-                            Building components and managing navigation with
-                            React Router
+                            JavaScript Widgets: Modals, Carousel, Dropdowns
                           </li>
-                          <li>
-                            Creating reusable UI elements and optimizing
-                            performance
-                          </li>
+                          <li>Creating Responsive Layouts Using Bootstrap</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -638,17 +649,19 @@ function Full_stack_development() {
                           Module 4:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Node.js
+                          JavaScript Essentials
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Setting up Node.js for backend development</li>
-                          <li>Creating RESTful APIs with Express.js</li>
-                          <li>Handling requests and managing middleware</li>
-                          <li>Working with JSON data</li>
+                          <li>JS Syntax, Variables, Data Types</li>
+                          <li>Functions, Conditionals, Loops</li>
+                          <li>Arrays and Objects</li>
+                          <li>DOM and BOM Manipulation</li>
+                          <li>Event Handling</li>
+                          <li>Working with Forms and Validations</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -667,19 +680,19 @@ function Full_stack_development() {
                           Module 5:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Laravel & CodeIgniter
+                          Modern JavaScript (ES6+)
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>
-                            Introduction to Laravel and CodeIgniter frameworks
-                          </li>
-                          <li>MVC architecture in Laravel and CodeIgniter</li>
-                          <li>Routing, controllers, and views</li>
-                          <li>Database integration and querying</li>
+                          <li>Arrow Functions, let & const</li>
+                          <li>Template Literals, Spread and Rest Operators</li>
+                          <li>Destructuring and Default Parameters</li>
+                          <li>Maps, Sets, for…of Loop</li>
+                          <li>Promises and Async/Await</li>
+                          <li>Classes and Inheritance</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -701,22 +714,20 @@ function Full_stack_development() {
                           Module 6:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Python
+                          jQuery Essentials
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
+                          <li>jQuery Syntax and Selectors</li>
+                          <li>DOM Manipulation with jQuery</li>
+                          <li>Events and Animations</li>
+                          <li>Working with Plugins</li>
                           <li>
-                            Introduction to Python for backend development
+                            jQuery UI Widgets (Datepicker, Modal, Accordion)
                           </li>
-                          <li>
-                            Building APIs with Python frameworks like Flask and
-                            Django
-                          </li>
-                          <li>Managing database operations with Python</li>
-                          <li>Secure routing and error handling</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -735,17 +746,22 @@ function Full_stack_development() {
                           Module 7:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Database Management
+                          ReactJS Basics
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>MySQL basics and database operations</li>
-                          <li>PostgreSQL features and querying</li>
-                          <li>MongoDB NoSQL database and CRUD operations</li>
-                          <li>Database optimization and indexing</li>
+                          <li>
+                            Introduction to React and JSXMySQL basics and
+                            database operations
+                          </li>
+                          <li>Components and Props</li>
+                          <li>State and Lifecycle</li>
+                          <li>Handling Events and Forms</li>
+                          <li>Lists and Conditional Rendering</li>
+                          <li>Styling Components (CSS, Styled Components)</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -764,25 +780,19 @@ function Full_stack_development() {
                           Module 8:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          API Integration
+                          React Advanced Concepts
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>
-                            Understanding API protocols and methods (GET, POST,
-                            PUT, DELETE)
-                          </li>
-                          <li>
-                            Integrating third-party APIs (RESTful and GraphQL)
-                          </li>
-                          <li>
-                            Working with external data and handling API
-                            responses
-                          </li>
-                          <li>Authentication and authorization in API calls</li>
+                          <li>Hooks: useState, useEffect</li>
+                          <li>React Router and Navigation </li>
+                          <li>Sharing State Between Components</li>
+                          <li>Connecting to APIs (Fetch & Axios)</li>
+                          <li>Context API for State Management</li>
+                          <li>Creating Reusable Services</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -801,22 +811,22 @@ function Full_stack_development() {
                           Module 9:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          App Security
+                          Projects, Version Control & Deployment
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to app security best practices</li>
+                          <li>Project: PSD to HTML Conversion</li>
+                          <li>Project: Responsive Website with Bootstrap </li>
+                          <li>Project: React CRUD Application</li>
+                          <li>Git & GitHub Essentials</li>
                           <li>
-                            Implementing secure authentication (JWT, OAuth){" "}
+                            Hosting Projects on GitHub Pages, Netlify, or Vercel
                           </li>
-                          <li>
-                            Protecting against SQL injection, XSS, and CSRF
-                            attacks
-                          </li>
-                          <li>Data encryption and secure API communication</li>
+                          <li>Introduction to Heroku Deployment</li>
+                          <li>Understanding Logs and Environment Variables</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -876,29 +886,29 @@ function Full_stack_development() {
                 </div>
               </div>
               <div className="courses-trainig-details mt-2 mt-md-5">
-                At Aryu Academy, our Full stack certification is trusted by
-                leading global companies. With our comprehensive training,
-                you’ll gain a certification that not only reflects your
-                expertise but also carries recognition across industries
+                At Aryu Academy, our UI / Frontend development certification is
+                trusted by leading global companies. With our comprehensive
+                training, you’ll gain a certification that not only reflects
+                your expertise but also carries recognition across industries
                 worldwide.
               </div>
 
               <div className="benefits-courses mt-0 mt-md-5 pt-2">
-                Benefits of Full stack Certification
+                Benefits of UI / Frontend Development Certification
               </div>
               <div className="courses-trainig-details mt-0 mt-md-5">
                 <ul>
                   <li>
-                    Prove your expertise by mastering Full stack Developer and
-                    showcasing your skills.
+                    Prove your expertise by mastering UI / Frontend Development
+                    and showcasing your skills.
                   </li>
                   <li>
                     Stand out by elevating your resume with a trusted
                     certification.
                   </li>
                   <li>
-                    Gain credibility as a go-to Full stack expert who drives
-                    results.{" "}
+                    Gain credibility as a go-to UI / Frontend Development expert
+                    who drives results.
                   </li>
                 </ul>
               </div>
@@ -921,11 +931,11 @@ function Full_stack_development() {
               <div className="benefits-head">Training Benefits</div>
               <div className="benefits-line"></div>
               <div className="courses-trainig-benefits-para mt-5">
-                Aryu Academy’s Full Stack Development Training in Chennai. Led
-                by industry professionals, this course provides 100% practical
-                training with live projects, career guidance, and interview
-                preparation. We also offer lifetime support to ensure your
-                growth.
+                Aryu Academy’s UI / Frontend development Training in Chennai.
+                Led by industry professionals, this course provides 100%
+                practical training with live projects, career guidance, and
+                interview preparation. We also offer lifetime support to ensure
+                your growth.
               </div>
               <div className="d-flex justify-content-between">
                 <div className="text-center benefits-complete-box mt-4 pt-2 ">
@@ -978,8 +988,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseOne"
                     >
-                      How Long Does It Take to Complete a Full Stack Development
-                      Course?
+                      What is front-end web development?
                     </button>
                   </h2>
                   <div
@@ -989,12 +998,10 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      The duration of a Full Stack Development course typically
-                      ranges from 3 to 6 months, depending on whether you choose
-                      a part-time or full-time program. Some boot camps or
-                      intensive courses can be completed in a shorter timeframe,
-                      while others offer more flexible, self-paced learning
-                      options.
+                      Front-end development is all about designing and building
+                      the part of a website that users see and interact with.
+                      Using HTML, CSS, and JavaScript, developers create smooth,
+                      responsive, and visually appealing websites.
                     </div>
                   </div>
                 </div>
@@ -1008,8 +1015,8 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseTwo"
                     >
-                      What Skills Will I Learn in a Full Stack Development
-                      Course?
+                      What are the career options after completing a
+                      UI/Front-End course?
                     </button>
                   </h2>
                   <div
@@ -1019,28 +1026,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      In a Full Stack Development course, you’ll learn:
-                      <ul>
-                        <li>
-                          Front-end technologies like HTML, CSS, JavaScript, and
-                          frameworks like React or Angular.
-                        </li>
-                        <li>
-                          Back-end technologies like Node.js, Express or Python,
-                          or Java.
-                        </li>
-                        <li>
-                          Database management with tools like MongoDB or MySQL
-                          or PostgreSQL.
-                        </li>
-                        <li>Version control using Git and GitHub.</li>
-                        <li>
-                          Building APIs and integrating third-party services.
-                        </li>
-                        <li>
-                          Deployment and hosting on platforms like AWS or Azure
-                        </li>
-                      </ul>
+                      You can apply for roles such as Front-End Developer, UI
+                      Developer, Web Designer, JavaScript Developer, or React
+                      Developer in startups, agencies, or tech companies.
                     </div>
                   </div>
                 </div>
@@ -1054,8 +1042,8 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseThree"
                     >
-                      What Topics Can I Customize in the Full Stack Development
-                      Course?
+                      What tools and technologies will be covered in this
+                      course?
                     </button>
                   </h2>
                   <div
@@ -1065,30 +1053,10 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      You can choose to focus on specific areas, such as:
-                      <ul>
-                        <li>
-                          <b>Front-End Development:</b> Master HTML, CSS,
-                          JavaScript, and frameworks like React.js or Angular.
-                        </li>
-                        <li>
-                          <b>Back-End Development:</b> Learn Node.js,
-                          Express.js, Python, Ruby on Rails, or PHP.
-                        </li>
-                        <li>
-                          <b>Databases:</b> Deep dive into relational (MySQL,
-                          PostgreSQL) or NoSQL (MongoDB) databases.
-                        </li>
-                        <li>
-                          <b>API Integration:</b> Focus on creating and
-                          consuming RESTful or GraphQL APIs.
-                        </li>
-                        <li>
-                          <b>Deployment:</b> Learn how to deploy full-stack
-                          applications using cloud platforms like AWS, Heroku,
-                          or Vercel.
-                        </li>
-                      </ul>
+                      This course will introduce you to key technologies like
+                      HTML, CSS, JavaScript, React, Bootstrap, Git, and modern
+                      web development frameworks, equipping you with the skills
+                      to build dynamic, responsive websites.
                     </div>
                   </div>
                 </div>
@@ -1102,7 +1070,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapsefour"
                     >
-                      Will I Get Hands-on Experience During the Course?
+                      What skills do I need before enrolling in this course?{" "}
                     </button>
                   </h2>
                   <div
@@ -1112,12 +1080,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      Yes, most Full Stack Development courses emphasize
-                      hands-on learning. You’ll work on real-world projects,
-                      from building simple websites to more complex
-                      applications. You'll also have the opportunity to
-                      collaborate with peers, helping you build a practical
-                      portfolio that you can showcase to potential employers.
+                      You don’t need prior coding experience. Basic computer
+                      skills, problem-solving ability, and interest in design
+                      and web technologies are enough to get started.
                     </div>
                   </div>
                 </div>
@@ -1131,8 +1096,8 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapsefive"
                     >
-                      What Are the Career Opportunities After Completing a Full
-                      Stack Development Course?
+                      What is the difference between UI Design and Front-End
+                      Development?
                     </button>
                   </h2>
                   <div
@@ -1142,20 +1107,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      After completing a Full Stack Development course, you can
-                      pursue a variety of roles, including:
-                      <ul>
-                        <li>Full Stack Developer</li>
-                        <li>Web Developer</li>
-                        <li>Front-end Developer</li>
-                        <li>Back-end Developer</li>
-                        <li>Software Engineer</li>
-                        <li>Application Developer</li>
-                        <li>DevOps Engineer</li>
-                      </ul>
-                      Full-stack developers are in high demand, as businesses
-                      need versatile developers who can work across all stages
-                      of the web development process.
+                      UI Design focuses on visual layouts and aesthetics, while
+                      Front-End Development brings those designs to life using
+                      code and makes them interactive.
                     </div>
                   </div>
                 </div>
@@ -1201,4 +1155,4 @@ function Full_stack_development() {
   );
 }
 
-export default Full_stack_development;
+export default Ui_front_development;

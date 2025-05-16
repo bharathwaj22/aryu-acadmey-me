@@ -40,6 +40,9 @@ import Resource_download from "../components/Resource_download.js";
 import E_books from "../resources/E_books.js";
 import Free_resource from "../components/Free_resource.js";
 import Give_way from "../components/Give_way.js";
+import Ui_front_development from "../coursespages/Ui_front_development.js";
+import React_js_development from "../coursespages/React_js_development.js";
+import Software_testing from "../coursespages/Software_testing.js";
 
 // const Contact = lazy(()=>import('../components/Contact'))
 // const Home = lazy(()=>import('../components/Home'))
@@ -71,6 +74,20 @@ function Router() {
       <Route path="/php-mysql-course-in-chennai" element={<Php_mysql />} />
       <Route path="/codeigniter-course-in-chennai" element={<Codelegniter />} />
       <Route path="*" element={<Error />} />
+
+      {/* front end */}
+      <Route
+        path="/ui-frontend-development-course-in-chennai"
+        element={<Ui_front_development />}
+      />
+      <Route
+        path="/react-js-development-course-in-chennai"
+        element={<React_js_development />}
+      />
+      <Route
+        path="/manual-testing-course-in-chennai"
+        element={<Software_testing />}
+      />
 
       {/* Digital marketing */}
       <Route
@@ -128,10 +145,7 @@ function Router() {
 
       <Route path="/resource-download/:id" element={<Resource_download />} />
       <Route path="/free-resource" element={<Free_resource />} />
-      <Route
-        path="/free-course-giveaway"
-        element={<Give_way />}
-      />
+      <Route path="/free-course-giveaway" element={<Give_way />} />
     </Routes>
   );
 }

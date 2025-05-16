@@ -49,10 +49,10 @@ import MongoDB from "../assests/images/tools/MongoDB.svg";
 import XAMPP from "../assests/images/tools/XAMPP.svg";
 
 import { useNavigate } from "react-router-dom";
-function Full_stack_development() {
+function Software_testing() {
   useEffect(() => {
     // Set page title
-    document.title = "Full Stack development course in Chennai";
+    document.title = "Manual Testing course in Chennai";
 
     // Function to dynamically update meta tags
     const setMetaTag = (name, content, isProperty = false) => {
@@ -76,18 +76,18 @@ function Full_stack_development() {
     // Set meta tags
     setMetaTag(
       "description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects."
+      "Manual Testing course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects."
     );
     setMetaTag(
       "keywords",
-      "Full Stack development course in Chennai, Full Stack developer course in chennai"
+      "Manual Testing course in Chennai, UI / Frontend developer course in chennai"
     );
 
     // Set Open Graph meta tags
-    setMetaTag("og:title", "Full Stack development course in Chennai", true);
+    setMetaTag("og:title", "Manual Testing course in Chennai", true);
     setMetaTag(
       "og:description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
+      "Manual Testing course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
       true
     );
     setMetaTag("og:image", ogimg, true);
@@ -101,7 +101,7 @@ function Full_stack_development() {
     );
     setMetaTag(
       "twitter:description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
+      "Manual Testing course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
       true
     );
     setMetaTag("twitter:image", ogimg, true);
@@ -131,7 +131,7 @@ function Full_stack_development() {
               <h1 className="pt-2 courses-texted">
                 {/* Digital Marketing Course */}
                 <span className="live-projects-text">
-                  Full Stack Development Course{" "}
+                  Manual Testing Course{" "}
                 </span>
                 <br></br>
 
@@ -143,8 +143,8 @@ function Full_stack_development() {
 
               <hr className="border-white w-75"></hr>
               <div className="courses-description pt-3">
-                Get a Full Stack Development Course in Chennai at Aryu academy
-                for your next-level career!
+                Get a Manual Testing Course in Chennai at Aryu academy for your
+                next-level career!
               </div>
               <div>
                 <div className="d-flex  align-items-center  gap-3 mt-5 ">
@@ -162,7 +162,7 @@ function Full_stack_development() {
                 </div>
               </div>
             </div>
-            <Coursesform type={"full_stack_development"}></Coursesform>
+            <Coursesform type={"react_js_development"}></Coursesform>
           </div>
           {/* <div className="d-flex  justify-content-center d-none d-md-flex">
             <div className="courses-training  ">
@@ -332,27 +332,31 @@ function Full_stack_development() {
                   </div>
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  Our Full Stack Development course provides a complete guide to
-                  building dynamic web applications. You’ll master frontend
-                  technologies like HTML, CSS, Bootstrap 5, JavaScript, jQuery,
-                  and React.js to design responsive and interactive user
-                  interfaces. On the backend, you’ll gain hands-on experience
-                  with Node.js, Laravel, CodeIgniter, and Python, enabling you
-                  to build robust server-side applications and APIs.
+                  Master the essentials of Software Testing with our practical
+                  training program, designed for both beginners and experienced
+                  professionals. Start with Manual Testing and explore key SDLC
+                  models, such as Waterfall, Spiral, V&V, Hybrid, and the Agile
+                  Model / Methodology. Learn core testing types, including White
+                  Box, Black Box, and Grey Box Testing, as well as functional,
+                  integration, and system testing for web and mobile
+                  applications.
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  You'll also learn to work with popular databases like MySQL,
-                  PostgreSQL, and MongoDB, mastering data management and
-                  optimization techniques. The course includes valuable lessons
-                  in API integration and app security, equipping you to securely
-                  connect external services and protect your applications.
+                  Build expertise in Non-Functional Testing areas like
+                  Performance, Compatibility, Usability, and Regression Testing.
+                  Learn to design effective test cases, understand the Software
+                  Test Life Cycle (STLC), and generate test execution reports.
+                  Develop practical skills in Test Planning, traceability, and
+                  applying testing metrics.
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  By the end of the course, you’ll have the skills to customize
-                  and deploy full-stack applications, making you a versatile
-                  developer ready to take on any project. Whether you aim to
-                  build websites or complex web apps, this course helps you
-                  adapt to real-world challenges.
+                  Gain confidence in Defect Management by understanding bug
+                  lifecycles, severity, and reporting practices. Explore Static
+                  and Dynamic Testing Techniques, understand the role of QA and
+                  QC, and discover the importance of Automation Testing using
+                  tools like Selenium. Apply your knowledge through real-time
+                  projects and become job-ready in the field of software
+                  testing.
                 </div>
               </div>
               <div className="about-training-image pt-0 pt-md-5 ">
@@ -376,30 +380,31 @@ function Full_stack_development() {
               </div>
               <div className="d-flex  flex-wrap  ">
                 <img
+                  title="VisualStudio"
                   src={VisualStudioCode}
                   alt="html"
                   className="Visual Studio Code tools used in Aryu Academy’s Full Stack Development course for writing and debugging code."
                 />
-                <img
+                {/* <img
                   src={Git}
                   alt="css"
                   className="Git tools used in Aryu Academy’s Full Stack Development course for version control and collaboration on projects."
-                />
-                <img
+                /> */}
+                {/* <img
                   src={Postman}
                   alt="Postman tool used in Aryu Academy’s Full Stack Development course for testing APIs and ensuring smooth communication."
                   className="tool-used-image"
-                />
-                <img
+                /> */}
+                {/* <img
                   src={MongoDB}
                   alt="MongoDB tool used in Aryu Academy’s Full Stack Development course for managing & querying databases in JavaScript apps."
                   className="tool-used-image"
-                />
-                <img
+                /> */}
+                {/* <img
                   src={XAMPP}
                   alt="XAMPP tool used in Aryu Academy’s Full Stack Development course for setting up a local server for web development."
                   className="tool-used-image"
-                />
+                /> */}
               </div>
               {/* <div className="d-flex justify-content-center d-lg-none ">
                 <img src={Html} alt="html"className="tool-used-image" />
@@ -544,7 +549,7 @@ function Full_stack_development() {
                           Module 1:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Frontend Development Basics
+                          Introduction to Software Testing & SDLC
                         </Typography>
                       </Typography>
                     </AccordionSummary>
@@ -552,10 +557,15 @@ function Full_stack_development() {
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to HTML, CSS, and Bootstrap 5</li>
-                          <li>Building responsive web pages with Bootstrap</li>
-                          <li>Styling techniques with CSS</li>
-                          <li>HTML structure and elements</li>
+                          <li className="text-drop-heading">
+                            Software Development Life Cycle (SDLC)
+                          </li>
+                          <li className="mx-3">Waterfall Model</li>
+                          <li className="mx-3">Spiral Model</li>
+                          <li className="mx-3">Prototype Model</li>
+                          <li className="mx-3">V & V Model</li>
+                          <li className="mx-3">Hybrid Model</li>
+                          <li className="mx-3">Agile Model / Methodology</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -574,17 +584,56 @@ function Full_stack_development() {
                           Module 2:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          JavaScript Fundamentals
+                          Testing Types and Approaches
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to JavaScript</li>
-                          <li>Variables, data types, and operators</li>
-                          <li>Functions, scope, and closures</li>
-                          <li>Working with objects and arrays</li>
+                          <li className="text-drop-heading">
+                            White Box Testing
+                          </li>
+                          <li className="mx-3">Path Testing</li>
+                          <li className="mx-3">Loop Testing</li>
+                          <li className="mx-3">Condition Testing</li>
+                          <li className="mx-3">
+                            From Memory and Performance Point of View
+                          </li>
+                          <li className="text-drop-heading">
+                            Grey Box Testing
+                          </li>
+                          <li className="text-drop-heading">
+                            Black Box Testing
+                          </li>
+                          <li className="mx-3">
+                            Functionality/Component Testing
+                          </li>
+                          <li className="mx-3">Integration Testing</li>
+                          <li className="mx-3 text-drop-heading">
+                            System Testing
+                          </li>
+                          <li className="mx-5">
+                            Build, Release, Patch, Test Cycle
+                          </li>
+                          <li className="mx-5">Continuous Integration</li>
+                          <li className="mx-5">Incident Management</li>
+                          <li className="mx-5">
+                            Software Architecture and Testing
+                          </li>
+                          <li className="mx-5">
+                            Testing for Web, Client-Server, and Standalone
+                            Applications
+                          </li>
+                          <li className="mx-3">
+                            Acceptance Testing: Alpha & Beta
+                          </li>
+                          <li className="mx-3">
+                            Smoke, Sanity, and Dry Run Testing
+                          </li>
+                          <li className="mx-3">
+                            Adhoc and Exploratory Testing
+                          </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -603,23 +652,29 @@ function Full_stack_development() {
                           Module 3:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          React.js for Dynamic Interfaces
+                          Non-Functional Testing Types
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Understanding React.js concepts</li>
-                          <li>State management and React hooks</li>
-                          <li>
-                            Building components and managing navigation with
-                            React Router
+                          <li>Compatibility Testing</li>
+                          <li className="text-drop-heading">
+                            Performance Testing
                           </li>
-                          <li>
-                            Creating reusable UI elements and optimizing
-                            performance
+                          <li className="mx-3">
+                            Load, Stress, Volume, Soak Testing
                           </li>
+                          <li>Reliability Testing</li>
+                          <li>Usability Testing</li>
+                          <li>Accessibility Testing</li>
+                          <li className="text-drop-heading">
+                            Globalization Testing
+                          </li>
+                          <li className="mx-3">Internationalization Testing</li>
+                          <li className="mx-3">Localization Testing</li>
+                          <li>Regression Testing</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -638,17 +693,29 @@ function Full_stack_development() {
                           Module 4:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Node.js
+                          Test Case Design & Execution
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Setting up Node.js for backend development</li>
-                          <li>Creating RESTful APIs with Express.js</li>
-                          <li>Handling requests and managing middleware</li>
-                          <li>Working with JSON data</li>
+                          <li>Introduction to Test Cases</li>
+                          <li className="text-drop-heading">
+                            Test Case Design Techniques
+                          </li>
+                          <li className="mx-3">
+                            Specification-Based Techniques
+                          </li>
+                          <li className="mx-3">Experience-Based Techniques</li>
+                          <li>Test Case Formats</li>
+                          <li>
+                            Writing Functional, Integration & System Test Cases
+                          </li>
+                          <li>
+                            Procedures for Writing and Executing Test Cases
+                          </li>
+                          <li>Test Case Review Process</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -667,19 +734,18 @@ function Full_stack_development() {
                           Module 5:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Laravel & CodeIgniter
+                          Software Test Life Cycle (STLC)
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
+                          <li>Understanding STLC Phases</li>
+                          <li>Creating a Traceability Matrix</li>
                           <li>
-                            Introduction to Laravel and CodeIgniter frameworks
+                            Generating and Interpreting Test Execution Reports
                           </li>
-                          <li>MVC architecture in Laravel and CodeIgniter</li>
-                          <li>Routing, controllers, and views</li>
-                          <li>Database integration and querying</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -701,22 +767,20 @@ function Full_stack_development() {
                           Module 6:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Python
+                          Test Planning and Metrics
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>
-                            Introduction to Python for backend development
-                          </li>
-                          <li>
-                            Building APIs with Python frameworks like Flask and
-                            Django
-                          </li>
-                          <li>Managing database operations with Python</li>
-                          <li>Secure routing and error handling</li>
+                          <li>Writing a Test Plan</li>
+                          <li>Key Sections in a Test Plan</li>
+                          <li>Understanding and Using Test Metrics</li>
+                          <li>Using NavLink, Redirect, and Nested Routes</li>
+                          <li>Passing Parameters Between Pages</li>
+                          <li>Protected Routes and Route Guards</li>
+                          <li>Deep Linking and Navigation Customization</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -735,17 +799,17 @@ function Full_stack_development() {
                           Module 7:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Database Management
+                          Defect Management
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>MySQL basics and database operations</li>
-                          <li>PostgreSQL features and querying</li>
-                          <li>MongoDB NoSQL database and CRUD operations</li>
-                          <li>Database optimization and indexing</li>
+                          <li>Introduction to Defects</li>
+                          <li>Defect Life Cycle</li>
+                          <li>Defect Status, Severity, and Priority</li>
+                          <li>Writing Defect/Incident Reports </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -764,7 +828,7 @@ function Full_stack_development() {
                           Module 8:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          API Integration
+                          Static and Dynamic Testing Techniques
                         </Typography>
                       </Typography>
                     </AccordionSummary>
@@ -772,17 +836,9 @@ function Full_stack_development() {
                       <Typography className="text-drop-details">
                         <ul>
                           <li>
-                            Understanding API protocols and methods (GET, POST,
-                            PUT, DELETE)
+                            Importance of Static Testing (Reviews, Inspections)
                           </li>
-                          <li>
-                            Integrating third-party APIs (RESTful and GraphQL)
-                          </li>
-                          <li>
-                            Working with external data and handling API
-                            responses
-                          </li>
-                          <li>Authentication and authorization in API calls</li>
+                          <li>Dynamic Testing Overview and Execution </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -801,22 +857,18 @@ function Full_stack_development() {
                           Module 9:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          App Security
+                          QA vs. QC and Industry Standards
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to app security best practices</li>
                           <li>
-                            Implementing secure authentication (JWT, OAuth){" "}
+                            Difference Between Quality Assurance (QA) and
+                            Quality Control (QC)
                           </li>
-                          <li>
-                            Protecting against SQL injection, XSS, and CSRF
-                            attacks
-                          </li>
-                          <li>Data encryption and secure API communication</li>
+                          <li>Role of Testing in Ensuring Software Quality </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -835,20 +887,30 @@ function Full_stack_development() {
                           Module 10:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          jQuery Basics
+                          Automation Tools & Real-Time Practice
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to jQuery</li>
-                          <li>
-                            Final Project: Creating and Launching a Store in
-                            Your Niche
+                          <li>Why Automation Testing?</li>
+                          <li className="text-drop-heading">
+                            Overview of Automation Tools:
                           </li>
-                          <li>jQuery syntax and usage</li>
-                          <li>jQuery for UI effects and animation</li>
+                          <li className="mx-3">Selenium</li>
+                          <li className="text-drop-heading">
+                            Real-Time Projects:
+                          </li>
+                          <li className="mx-3">
+                            Project 1: Web Application Testing
+                          </li>
+                          <li className="mx-3">
+                            Project 2: Mobile Application Testing
+                          </li>
+                          <li className="mx-3">
+                            Project 3: Compatibility Testing Practice
+                          </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -876,7 +938,7 @@ function Full_stack_development() {
                 </div>
               </div>
               <div className="courses-trainig-details mt-2 mt-md-5">
-                At Aryu Academy, our Full stack certification is trusted by
+                At Aryu Academy, our Manual Testing certification is trusted by
                 leading global companies. With our comprehensive training,
                 you’ll gain a certification that not only reflects your
                 expertise but also carries recognition across industries
@@ -884,12 +946,12 @@ function Full_stack_development() {
               </div>
 
               <div className="benefits-courses mt-0 mt-md-5 pt-2">
-                Benefits of Full stack Certification
+                Benefits of our Manual Testing Certification
               </div>
               <div className="courses-trainig-details mt-0 mt-md-5">
                 <ul>
                   <li>
-                    Prove your expertise by mastering Full stack Developer and
+                    Prove your expertise by mastering Manual Testing and
                     showcasing your skills.
                   </li>
                   <li>
@@ -897,8 +959,8 @@ function Full_stack_development() {
                     certification.
                   </li>
                   <li>
-                    Gain credibility as a go-to Full stack expert who drives
-                    results.{" "}
+                    Gain credibility as a go-to Manual Testing expert who drives
+                    results.
                   </li>
                 </ul>
               </div>
@@ -921,8 +983,8 @@ function Full_stack_development() {
               <div className="benefits-head">Training Benefits</div>
               <div className="benefits-line"></div>
               <div className="courses-trainig-benefits-para mt-5">
-                Aryu Academy’s Full Stack Development Training in Chennai. Led
-                by industry professionals, this course provides 100% practical
+                Aryu Academy’s Manual Testing Training in Chennai. Led by
+                industry professionals, this course provides 100% practical
                 training with live projects, career guidance, and interview
                 preparation. We also offer lifetime support to ensure your
                 growth.
@@ -978,8 +1040,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseOne"
                     >
-                      How Long Does It Take to Complete a Full Stack Development
-                      Course?
+                      What is manual testing?{" "}
                     </button>
                   </h2>
                   <div
@@ -989,12 +1050,10 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      The duration of a Full Stack Development course typically
-                      ranges from 3 to 6 months, depending on whether you choose
-                      a part-time or full-time program. Some boot camps or
-                      intensive courses can be completed in a shorter timeframe,
-                      while others offer more flexible, self-paced learning
-                      options.
+                      Manual testing is a software testing method where testers
+                      check applications without using automated tools. It
+                      involves manually executing test cases, identifying bugs,
+                      and assessing usability from an end-user’s perspective.
                     </div>
                   </div>
                 </div>
@@ -1008,8 +1067,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseTwo"
                     >
-                      What Skills Will I Learn in a Full Stack Development
-                      Course?
+                      Does manual testing need coding?
                     </button>
                   </h2>
                   <div
@@ -1019,28 +1077,10 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      In a Full Stack Development course, you’ll learn:
-                      <ul>
-                        <li>
-                          Front-end technologies like HTML, CSS, JavaScript, and
-                          frameworks like React or Angular.
-                        </li>
-                        <li>
-                          Back-end technologies like Node.js, Express or Python,
-                          or Java.
-                        </li>
-                        <li>
-                          Database management with tools like MongoDB or MySQL
-                          or PostgreSQL.
-                        </li>
-                        <li>Version control using Git and GitHub.</li>
-                        <li>
-                          Building APIs and integrating third-party services.
-                        </li>
-                        <li>
-                          Deployment and hosting on platforms like AWS or Azure
-                        </li>
-                      </ul>
+                      No, manual testing doesn’t need coding. It focuses on
+                      manually checking the software’s functionality,
+                      identifying bugs, and verifying user requirements without
+                      writing any code.
                     </div>
                   </div>
                 </div>
@@ -1054,8 +1094,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseThree"
                     >
-                      What Topics Can I Customize in the Full Stack Development
-                      Course?
+                      Can I learn software testing in 3 months?
                     </button>
                   </h2>
                   <div
@@ -1065,30 +1104,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      You can choose to focus on specific areas, such as:
-                      <ul>
-                        <li>
-                          <b>Front-End Development:</b> Master HTML, CSS,
-                          JavaScript, and frameworks like React.js or Angular.
-                        </li>
-                        <li>
-                          <b>Back-End Development:</b> Learn Node.js,
-                          Express.js, Python, Ruby on Rails, or PHP.
-                        </li>
-                        <li>
-                          <b>Databases:</b> Deep dive into relational (MySQL,
-                          PostgreSQL) or NoSQL (MongoDB) databases.
-                        </li>
-                        <li>
-                          <b>API Integration:</b> Focus on creating and
-                          consuming RESTful or GraphQL APIs.
-                        </li>
-                        <li>
-                          <b>Deployment:</b> Learn how to deploy full-stack
-                          applications using cloud platforms like AWS, Heroku,
-                          or Vercel.
-                        </li>
-                      </ul>
+                      Yes, you can learn software testing in 3 months by
+                      focusing on manual testing, test case design, bug
+                      reporting, and gaining practical experience.
                     </div>
                   </div>
                 </div>
@@ -1102,7 +1120,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapsefour"
                     >
-                      Will I Get Hands-on Experience During the Course?
+                      Is manual testing easy to learn?
                     </button>
                   </h2>
                   <div
@@ -1112,12 +1130,10 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      Yes, most Full Stack Development courses emphasize
-                      hands-on learning. You’ll work on real-world projects,
-                      from building simple websites to more complex
-                      applications. You'll also have the opportunity to
-                      collaborate with peers, helping you build a practical
-                      portfolio that you can showcase to potential employers.
+                      Yes, manual testing is generally easy to learn, especially
+                      for beginners. It requires attention to detail, logical
+                      thinking, and understanding of software functionality—no
+                      coding skills are needed.
                     </div>
                   </div>
                 </div>
@@ -1131,8 +1147,8 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapsefive"
                     >
-                      What Are the Career Opportunities After Completing a Full
-                      Stack Development Course?
+                      What is the difference between manual testing and
+                      automation testing?
                     </button>
                   </h2>
                   <div
@@ -1142,20 +1158,19 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      After completing a Full Stack Development course, you can
-                      pursue a variety of roles, including:
                       <ul>
-                        <li>Full Stack Developer</li>
-                        <li>Web Developer</li>
-                        <li>Front-end Developer</li>
-                        <li>Back-end Developer</li>
-                        <li>Software Engineer</li>
-                        <li>Application Developer</li>
-                        <li>DevOps Engineer</li>
+                        <li>
+                          Manual Testing: Testers manually execute test cases
+                          without using tools, focusing on exploring the
+                          application and identifying issues from a user’s
+                          perspective. It requires no coding
+                        </li>
+                        <li>
+                          Automation Testing: Uses scripts and tools to
+                          automatically run tests, making it faster for
+                          repetitive tasks but requires programming knowledge.
+                        </li>
                       </ul>
-                      Full-stack developers are in high demand, as businesses
-                      need versatile developers who can work across all stages
-                      of the web development process.
                     </div>
                   </div>
                 </div>
@@ -1201,4 +1216,4 @@ function Full_stack_development() {
   );
 }
 
-export default Full_stack_development;
+export default Software_testing;
