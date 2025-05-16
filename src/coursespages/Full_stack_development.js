@@ -138,7 +138,7 @@ const homeRegisterForm = ()=>{
                 <span className="live-projects-text">in Chennai </span>
               </h1>
               <h2 className="live-projects-text">
-              {` \{ 2 Months Course + 1 Month Internship \} `}
+              {` \{ 3 Months Course + 1 Month Internship \} `}
               </h2>
               
               <hr className="border-white w-75"></hr>
@@ -495,7 +495,7 @@ const homeRegisterForm = ()=>{
             </div>
           </div>
           <div className="moduals-courses pt-4">
-            5 Modules • Approx 11 hours Learning content
+            3 Months Course + 2 Months Internship
           </div>
         </section>
         <section className="accordion">
