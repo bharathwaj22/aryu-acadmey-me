@@ -59,6 +59,9 @@ function Header() {
     "/seo-course-in-chennai",
     "/social-media-marketing-course-in-chennai",
     // "/creo-course-in-chennai",
+    "/ui-frontend-development-course-in-chennai",
+    "/react-js-development-course-in-chennai",
+    "/manual-testing-course-in-chennai",
   ];
 
   // Check if current location matches any submenu path
@@ -122,7 +125,7 @@ function Header() {
                 className={`submenu ${isPopupOpen ? "open" : ""}`}
                 onMouseLeave={() => setPopupOpen(false)}
               >
-                <div>
+                <div className="header-div">
                   <div className="head-course-heading">DESIGNER COURSE</div>
                   <Link
                     to="/ui-ux-desginer-course-in-chennai"
@@ -169,6 +172,42 @@ function Header() {
                     React Native
                   </Link> */}
                 </div>
+                {/* frontend */}
+
+                  <div>
+                  <div className="head-course-heading">FrontEnd Development</div>
+                  {/* <Link to="/php-mysql-course-in-chennai" className="submenu-item mt-4">
+                    PHP Development
+                  </Link> */}
+                  <Link
+                    to="/ui-frontend-development-course-in-chennai"
+                    className="submenu-item mt-4"
+                  >
+                    UI / FrontEnd development 
+                  </Link>
+                   <Link
+                    to="/react-js-development-course-in-chennai"
+                    className="submenu-item "
+                  >
+                    React JS development 
+                  </Link>
+                  {/* <Link to="/codeigniter-course-in-chennai" className="submenu-item">
+                    CodeIgniter
+                  </Link> */}
+
+                  <div className="head-course-heading mt-2">
+                    Software Testing
+                  </div>
+
+                  <Link
+                    to="/manual-testing-course-in-chennai"
+                    className="submenu-item"
+                  >
+                    Manual Testing
+                  </Link>
+                </div>
+
+                {/* lavral */}
                 <div>
                   <div className="head-course-heading">PHP FRAMEWORKS</div>
                   {/* <Link to="/php-mysql-course-in-chennai" className="submenu-item mt-4">

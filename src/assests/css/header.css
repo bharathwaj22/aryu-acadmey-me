@@ -149,8 +149,8 @@
   
   position: absolute;
   top: 70px;
-  left: 4%;
-  width: 90vw; 
+  left: 2%;
+  width: 95vw; 
   background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
   max-height: 0;
@@ -159,6 +159,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   
   display: flex;
+  
   justify-content: space-evenly;
   padding: 10px;
   z-index: 1;
@@ -167,6 +168,9 @@
 .submenu.open {
   max-height: 300px; 
 }
+/* .header-div{
+  width: 20%;
+} */
 
 /* .submenu-item {
   display: block;
@@ -245,6 +249,7 @@
   font-family: 'heading-black';
   font-size: 20px;
   color: rgb(21, 20, 20);
+  text-transform: uppercase;
 
 }
 .arrow-icon-head {

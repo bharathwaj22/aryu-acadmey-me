@@ -49,10 +49,10 @@ import MongoDB from "../assests/images/tools/MongoDB.svg";
 import XAMPP from "../assests/images/tools/XAMPP.svg";
 
 import { useNavigate } from "react-router-dom";
-function Full_stack_development() {
+function React_js_development() {
   useEffect(() => {
     // Set page title
-    document.title = "Full Stack development course in Chennai";
+    document.title = "React JS course in Chennai";
 
     // Function to dynamically update meta tags
     const setMetaTag = (name, content, isProperty = false) => {
@@ -76,18 +76,18 @@ function Full_stack_development() {
     // Set meta tags
     setMetaTag(
       "description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects."
+      "React JS course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects."
     );
     setMetaTag(
       "keywords",
-      "Full Stack development course in Chennai, Full Stack developer course in chennai"
+      "React JS course in Chennai, UI / Frontend developer course in chennai"
     );
 
     // Set Open Graph meta tags
-    setMetaTag("og:title", "Full Stack development course in Chennai", true);
+    setMetaTag("og:title", "React JS course in Chennai", true);
     setMetaTag(
       "og:description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
+      "React JS course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
       true
     );
     setMetaTag("og:image", ogimg, true);
@@ -101,7 +101,7 @@ function Full_stack_development() {
     );
     setMetaTag(
       "twitter:description",
-      "Full Stack Development course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
+      "React JS course in Chennai trains you in frontend, backend, databases, and APIs, shaping you into a skilled developer for live projects.",
       true
     );
     setMetaTag("twitter:image", ogimg, true);
@@ -130,9 +130,7 @@ function Full_stack_development() {
 
               <h1 className="pt-2 courses-texted">
                 {/* Digital Marketing Course */}
-                <span className="live-projects-text">
-                  Full Stack Development Course{" "}
-                </span>
+                <span className="live-projects-text">React JS Course </span>
                 <br></br>
 
                 <span className="live-projects-text">in Chennai </span>
@@ -143,8 +141,8 @@ function Full_stack_development() {
 
               <hr className="border-white w-75"></hr>
               <div className="courses-description pt-3">
-                Get a Full Stack Development Course in Chennai at Aryu academy
-                for your next-level career!
+                Get a React JS Course in Chennai at Aryu academy for your
+                next-level career!
               </div>
               <div>
                 <div className="d-flex  align-items-center  gap-3 mt-5 ">
@@ -162,7 +160,7 @@ function Full_stack_development() {
                 </div>
               </div>
             </div>
-            <Coursesform type={"full_stack_development"}></Coursesform>
+            <Coursesform type={"react_js_development"}></Coursesform>
           </div>
           {/* <div className="d-flex  justify-content-center d-none d-md-flex">
             <div className="courses-training  ">
@@ -332,27 +330,27 @@ function Full_stack_development() {
                   </div>
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  Our Full Stack Development course provides a complete guide to
-                  building dynamic web applications. You’ll master frontend
-                  technologies like HTML, CSS, Bootstrap 5, JavaScript, jQuery,
-                  and React.js to design responsive and interactive user
-                  interfaces. On the backend, you’ll gain hands-on experience
-                  with Node.js, Laravel, CodeIgniter, and Python, enabling you
-                  to build robust server-side applications and APIs.
+                  Learn to build fast, interactive web applications with our
+                  ReactJS course, ideal for both beginners and experienced
+                  coders. Start with setting up your environment, exploring JSX
+                  syntax, and creating your first app using components and the
+                  virtual DOM. Dive into core concepts like props, state, and
+                  hooks (useState, useEffect) to manage data and app behavior.
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  You'll also learn to work with popular databases like MySQL,
-                  PostgreSQL, and MongoDB, mastering data management and
-                  optimization techniques. The course includes valuable lessons
-                  in API integration and app security, equipping you to securely
-                  connect external services and protect your applications.
+                  Master form management and routing using React Router. Gain a
+                  solid understanding of state management using Redux and
+                  Context API, and learn to integrate APIs with Axios or Fetch.
+                  Style your apps using CSS, Flexbox, and animation libraries to
+                  enhance user experience.
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  By the end of the course, you’ll have the skills to customize
-                  and deploy full-stack applications, making you a versatile
-                  developer ready to take on any project. Whether you aim to
-                  build websites or complex web apps, this course helps you
-                  adapt to real-world challenges.
+                  The course also covers performance optimization with useMemo
+                  and React.memo, and guides you through deployment using
+                  platforms like Netlify or Firebase. By the end, you’ll
+                  complete a capstone project—a fully functional React
+                  app—equipping you with the skills to launch your career as a
+                  confident React developer.
                 </div>
               </div>
               <div className="about-training-image pt-0 pt-md-5 ">
@@ -376,30 +374,31 @@ function Full_stack_development() {
               </div>
               <div className="d-flex  flex-wrap  ">
                 <img
+                  title="VisualStudio"
                   src={VisualStudioCode}
                   alt="html"
                   className="Visual Studio Code tools used in Aryu Academy’s Full Stack Development course for writing and debugging code."
                 />
-                <img
+                {/* <img
                   src={Git}
                   alt="css"
                   className="Git tools used in Aryu Academy’s Full Stack Development course for version control and collaboration on projects."
-                />
-                <img
+                /> */}
+                {/* <img
                   src={Postman}
                   alt="Postman tool used in Aryu Academy’s Full Stack Development course for testing APIs and ensuring smooth communication."
                   className="tool-used-image"
-                />
-                <img
+                /> */}
+                {/* <img
                   src={MongoDB}
                   alt="MongoDB tool used in Aryu Academy’s Full Stack Development course for managing & querying databases in JavaScript apps."
                   className="tool-used-image"
-                />
-                <img
+                /> */}
+                {/* <img
                   src={XAMPP}
                   alt="XAMPP tool used in Aryu Academy’s Full Stack Development course for setting up a local server for web development."
                   className="tool-used-image"
-                />
+                /> */}
               </div>
               {/* <div className="d-flex justify-content-center d-lg-none ">
                 <img src={Html} alt="html"className="tool-used-image" />
@@ -544,7 +543,7 @@ function Full_stack_development() {
                           Module 1:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Frontend Development Basics
+                          Introduction to ReactJS
                         </Typography>
                       </Typography>
                     </AccordionSummary>
@@ -552,10 +551,14 @@ function Full_stack_development() {
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to HTML, CSS, and Bootstrap 5</li>
-                          <li>Building responsive web pages with Bootstrap</li>
-                          <li>Styling techniques with CSS</li>
-                          <li>HTML structure and elements</li>
+                          <li>What is ReactJS?</li>
+                          <li>Key Features and Advantages</li>
+                          <li>React vs Other Frameworks</li>
+                          <li>Setting Up Environment (Node.js, npm, IDEs)</li>
+                          <li>Create React App Basics</li>
+                          <li>Understanding JSX Syntax</li>
+                          <li>How Virtual DOM Works</li>
+                          <li>First App with JSX and Components</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -574,17 +577,17 @@ function Full_stack_development() {
                           Module 2:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          JavaScript Fundamentals
+                          Components and JSX
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to JavaScript</li>
-                          <li>Variables, data types, and operators</li>
-                          <li>Functions, scope, and closures</li>
-                          <li>Working with objects and arrays</li>
+                          <li>Functional vs Class Components</li>
+                          <li>Creating Reusable Components</li>
+                          <li>Nesting Components</li>
+                          <li>JSX Expressions and JavaScript Logic</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -603,23 +606,20 @@ function Full_stack_development() {
                           Module 3:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          React.js for Dynamic Interfaces
+                          Props and State
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Understanding React.js concepts</li>
-                          <li>State management and React hooks</li>
-                          <li>
-                            Building components and managing navigation with
-                            React Router
-                          </li>
-                          <li>
-                            Creating reusable UI elements and optimizing
-                            performance
-                          </li>
+                          <li>What Are Props and How to Use Them</li>
+                          <li>Passing Data Between Components</li>
+                          <li>Introduction to State</li>
+                          <li>useState Hook in Functional Components</li>
+                          <li>Initializing and Updating State</li>
+                          <li>Props Validation</li>
+                          <li>Conditional Rendering</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -638,17 +638,18 @@ function Full_stack_development() {
                           Module 4:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Node.js
+                          Lifecycle and Hooks
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Setting up Node.js for backend development</li>
-                          <li>Creating RESTful APIs with Express.js</li>
-                          <li>Handling requests and managing middleware</li>
-                          <li>Working with JSON data</li>
+                          <li>Introduction to useEffect</li>
+                          <li>Side Effects and Data Fetching</li>
+                          <li>Component Mounting and Unmounting</li>
+                          <li>Lifting State Up</li>
+                          <li>Prop Drilling and Component Re-rendering</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -667,19 +668,20 @@ function Full_stack_development() {
                           Module 5:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Laravel & CodeIgniter
+                          Forms and User Input
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>
-                            Introduction to Laravel and CodeIgniter frameworks
-                          </li>
-                          <li>MVC architecture in Laravel and CodeIgniter</li>
-                          <li>Routing, controllers, and views</li>
-                          <li>Database integration and querying</li>
+                          <li>Controlled vs Uncontrolled Components</li>
+                          <li>Handling Events (onChange, onClick, etc.)</li>
+                          <li>Handling Text Inputs, Buttons, Checkboxes</li>
+                          <li>Setting Default Values</li>
+                          <li>Form Validation Techniques</li>
+                          <li>Using useRef for Direct DOM Access</li>
+                          <li>Building a Simple Form with Validation</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -701,22 +703,20 @@ function Full_stack_development() {
                           Module 6:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Backend Development with Python
+                          Routing and Navigation
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>
-                            Introduction to Python for backend development
-                          </li>
-                          <li>
-                            Building APIs with Python frameworks like Flask and
-                            Django
-                          </li>
-                          <li>Managing database operations with Python</li>
-                          <li>Secure routing and error handling</li>
+                          <li>What is Client-side Routing?</li>
+                          <li>Setting Up React Router</li>
+                          <li>Creating Routes, Links, and Navigation</li>
+                          <li>Using NavLink, Redirect, and Nested Routes</li>
+                          <li>Passing Parameters Between Pages</li>
+                          <li>Protected Routes and Route Guards</li>
+                          <li>Deep Linking and Navigation Customization</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -735,17 +735,19 @@ function Full_stack_development() {
                           Module 7:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          Database Management
+                          State Management with Redux & Context
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>MySQL basics and database operations</li>
-                          <li>PostgreSQL features and querying</li>
-                          <li>MongoDB NoSQL database and CRUD operations</li>
-                          <li>Database optimization and indexing</li>
+                          <li>Why Use Redux?</li>
+                          <li>Redux Architecture: Store, Actions, Reducers</li>
+                          <li>Setting Up Redux in React</li>
+                          <li>Connecting Components to Redux Store</li>
+                          <li>Using Middleware – Redux Thunk, Saga (intro)</li>
+                          <li>Introduction to Context API for Global State</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -764,25 +766,18 @@ function Full_stack_development() {
                           Module 8:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          API Integration
+                          API Integration and Data Handling
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>
-                            Understanding API protocols and methods (GET, POST,
-                            PUT, DELETE)
-                          </li>
-                          <li>
-                            Integrating third-party APIs (RESTful and GraphQL)
-                          </li>
-                          <li>
-                            Working with external data and handling API
-                            responses
-                          </li>
-                          <li>Authentication and authorization in API calls</li>
+                          <li>Fetching Data with fetch and Axios</li>
+                          <li>Displaying API Data in Components </li>
+                          <li>Handling Loading, Error, and Empty States</li>
+                          <li>useEffect with API Calls</li>
+                          <li>Securely Handling Tokens and Cookies</li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -801,22 +796,18 @@ function Full_stack_development() {
                           Module 9:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          App Security
+                          Styling and Animations
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to app security best practices</li>
-                          <li>
-                            Implementing secure authentication (JWT, OAuth){" "}
-                          </li>
-                          <li>
-                            Protecting against SQL injection, XSS, and CSRF
-                            attacks
-                          </li>
-                          <li>Data encryption and secure API communication</li>
+                          <li>Using Inline CSS and External Styles</li>
+                          <li>Styled-Components Overview </li>
+                          <li>Flexbox Layout in React</li>
+                          <li>Adding Animations with Animated API</li>
+                          <li>CSS Transitions and Animation Libraries </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -835,20 +826,23 @@ function Full_stack_development() {
                           Module 10:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          jQuery Basics
+                          Optimization, and Deployment
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to jQuery</li>
                           <li>
-                            Final Project: Creating and Launching a Store in
-                            Your Niche
+                            Optimizing Performance with React.memo,
+                            useMemo,usecallback
                           </li>
-                          <li>jQuery syntax and usage</li>
-                          <li>jQuery for UI effects and animation</li>
+                          <li>Code Splitting and Lazy Loading</li>
+                          <li>Building for Production</li>
+                          <li>Hosting Apps on Netlify, Vercel, or Firebase</li>
+                          <li>
+                            Final Capstone Project: Build a Full React App
+                          </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
@@ -876,7 +870,7 @@ function Full_stack_development() {
                 </div>
               </div>
               <div className="courses-trainig-details mt-2 mt-md-5">
-                At Aryu Academy, our Full stack certification is trusted by
+                At Aryu Academy, our React JS certification is trusted by
                 leading global companies. With our comprehensive training,
                 you’ll gain a certification that not only reflects your
                 expertise but also carries recognition across industries
@@ -884,21 +878,21 @@ function Full_stack_development() {
               </div>
 
               <div className="benefits-courses mt-0 mt-md-5 pt-2">
-                Benefits of Full stack Certification
+                Benefits of React JS Certification
               </div>
               <div className="courses-trainig-details mt-0 mt-md-5">
                 <ul>
                   <li>
-                    Prove your expertise by mastering Full stack Developer and
-                    showcasing your skills.
+                    Prove your expertise by mastering React JS and showcasing
+                    your skills.
                   </li>
                   <li>
                     Stand out by elevating your resume with a trusted
                     certification.
                   </li>
                   <li>
-                    Gain credibility as a go-to Full stack expert who drives
-                    results.{" "}
+                    Gain credibility as a go-to React JS expert who drives
+                    results.
                   </li>
                 </ul>
               </div>
@@ -921,11 +915,10 @@ function Full_stack_development() {
               <div className="benefits-head">Training Benefits</div>
               <div className="benefits-line"></div>
               <div className="courses-trainig-benefits-para mt-5">
-                Aryu Academy’s Full Stack Development Training in Chennai. Led
-                by industry professionals, this course provides 100% practical
-                training with live projects, career guidance, and interview
-                preparation. We also offer lifetime support to ensure your
-                growth.
+                Aryu Academy’s React JS Training in Chennai. Led by industry
+                professionals, this course provides 100% practical training with
+                live projects, career guidance, and interview preparation. We
+                also offer lifetime support to ensure your growth.
               </div>
               <div className="d-flex justify-content-between">
                 <div className="text-center benefits-complete-box mt-4 pt-2 ">
@@ -978,8 +971,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseOne"
                     >
-                      How Long Does It Take to Complete a Full Stack Development
-                      Course?
+                      Can I learn ReactJS in 2 months at Aryu Academy?
                     </button>
                   </h2>
                   <div
@@ -989,12 +981,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      The duration of a Full Stack Development course typically
-                      ranges from 3 to 6 months, depending on whether you choose
-                      a part-time or full-time program. Some boot camps or
-                      intensive courses can be completed in a shorter timeframe,
-                      while others offer more flexible, self-paced learning
-                      options.
+                      Yes! At Aryu Academy, our step-by-step training and
+                      regular practice sessions help you build strong ReactJS
+                      skills in just two months
                     </div>
                   </div>
                 </div>
@@ -1008,8 +997,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseTwo"
                     >
-                      What Skills Will I Learn in a Full Stack Development
-                      Course?
+                      Is ReactJS still in demand?
                     </button>
                   </h2>
                   <div
@@ -1019,28 +1007,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      In a Full Stack Development course, you’ll learn:
-                      <ul>
-                        <li>
-                          Front-end technologies like HTML, CSS, JavaScript, and
-                          frameworks like React or Angular.
-                        </li>
-                        <li>
-                          Back-end technologies like Node.js, Express or Python,
-                          or Java.
-                        </li>
-                        <li>
-                          Database management with tools like MongoDB or MySQL
-                          or PostgreSQL.
-                        </li>
-                        <li>Version control using Git and GitHub.</li>
-                        <li>
-                          Building APIs and integrating third-party services.
-                        </li>
-                        <li>
-                          Deployment and hosting on platforms like AWS or Azure
-                        </li>
-                      </ul>
+                      Absolutely! Major companies like Facebook, Netflix, and
+                      Instagram rely on ReactJS, and it’s among the most
+                      sought-after skills in web development.
                     </div>
                   </div>
                 </div>
@@ -1054,8 +1023,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapseThree"
                     >
-                      What Topics Can I Customize in the Full Stack Development
-                      Course?
+                      What is JSX in React?
                     </button>
                   </h2>
                   <div
@@ -1065,30 +1033,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      You can choose to focus on specific areas, such as:
-                      <ul>
-                        <li>
-                          <b>Front-End Development:</b> Master HTML, CSS,
-                          JavaScript, and frameworks like React.js or Angular.
-                        </li>
-                        <li>
-                          <b>Back-End Development:</b> Learn Node.js,
-                          Express.js, Python, Ruby on Rails, or PHP.
-                        </li>
-                        <li>
-                          <b>Databases:</b> Deep dive into relational (MySQL,
-                          PostgreSQL) or NoSQL (MongoDB) databases.
-                        </li>
-                        <li>
-                          <b>API Integration:</b> Focus on creating and
-                          consuming RESTful or GraphQL APIs.
-                        </li>
-                        <li>
-                          <b>Deployment:</b> Learn how to deploy full-stack
-                          applications using cloud platforms like AWS, Heroku,
-                          or Vercel.
-                        </li>
-                      </ul>
+                      JSX allows you to write HTML-like code within JavaScript,
+                      simplifying the process of creating and managing React
+                      components.
                     </div>
                   </div>
                 </div>
@@ -1102,7 +1049,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapsefour"
                     >
-                      Will I Get Hands-on Experience During the Course?
+                      . How much JavaScript is required for React?{" "}
                     </button>
                   </h2>
                   <div
@@ -1112,12 +1059,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      Yes, most Full Stack Development courses emphasize
-                      hands-on learning. You’ll work on real-world projects,
-                      from building simple websites to more complex
-                      applications. You'll also have the opportunity to
-                      collaborate with peers, helping you build a practical
-                      portfolio that you can showcase to potential employers.
+                      You should be comfortable with JavaScript ES6 features,
+                      such as classes, modules, arrow functions, destructuring,
+                      and promises.
                     </div>
                   </div>
                 </div>
@@ -1131,8 +1075,7 @@ function Full_stack_development() {
                       aria-expanded="false"
                       aria-controls="flush-collapsefive"
                     >
-                      What Are the Career Opportunities After Completing a Full
-                      Stack Development Course?
+                      What is the salary of a React developer?
                     </button>
                   </h2>
                   <div
@@ -1142,20 +1085,9 @@ function Full_stack_development() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      After completing a Full Stack Development course, you can
-                      pursue a variety of roles, including:
-                      <ul>
-                        <li>Full Stack Developer</li>
-                        <li>Web Developer</li>
-                        <li>Front-end Developer</li>
-                        <li>Back-end Developer</li>
-                        <li>Software Engineer</li>
-                        <li>Application Developer</li>
-                        <li>DevOps Engineer</li>
-                      </ul>
-                      Full-stack developers are in high demand, as businesses
-                      need versatile developers who can work across all stages
-                      of the web development process.
+                      The salary of a React developer varies by location and
+                      experience but typically ranges from $60,000 to $120,000
+                      per year in the U.S.
                     </div>
                   </div>
                 </div>
@@ -1201,4 +1133,4 @@ function Full_stack_development() {
   );
 }
 
-export default Full_stack_development;
+export default React_js_development;
