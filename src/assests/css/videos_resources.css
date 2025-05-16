@@ -1,0 +1,265 @@
+.video-bg-image{
+    background-image: url(../images/aboutUs//header-bg.svg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* free resources */
+
+
+.free-box{
+    width: 60%;
+    background-color: #F9F9F9;
+    border-radius: 22.19px;
+    border: 2px solid #EB23290D;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.algin-free-resource{
+    width: 100%;
+   
+    justify-content: center;
+}
+
+
+.resource-image img{
+    width: 133px;
+    height:133px;
+    object-fit: cover;
+    border-radius: 22.19px  0px 0px 22.19px ;
+    /* background-color: #333; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  .free-box:hover {
+    transform: scale(1.0); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); 
+}
+.algin-free-resource{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.daily-report-land{
+    font-family: 'heading-heavy';
+    font-size: 33px;
+    color: rgba(0, 0, 0, 1);
+   
+    
+   
+}
+.download-div{
+    width:250px;
+    height: 40px;
+    margin-right: 2%;
+    margin-top: 9%;
+   
+    
+}
+/* .download-free-map{
+    font-family:'heading-roman';
+    font-size: 16px;
+    padding: 15px 20px;
+    background-color:#C40116;
+    border: 1px solid #C40116;
+    border-radius: 43px;
+    color: #FFFFFF;
+} */
+.download-icon-free{
+    font-size: 25px;
+}
+
+.download-free-map {
+    font-family: 'heading-roman';
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #C40116;
+    border: 1px solid #C40116;
+    border-radius: 43px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+.pad-download-button{
+    padding-right: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.download-icon-free {
+    font-size: 25px;
+    transition: transform 0.3s ease; 
+}
+
+.download-free-map:hover .download-icon-free {
+    animation: bounce 0.6s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* tradio */
+.radio-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .custom-radio {
+    margin-right: 0.5rem;
+    margin-top: 4px;
+    font-size: 20px;
+  }
+  
+  .ms-2 {
+    margin-left: 0.5rem; 
+}
+  
+.type-of-course-resource{
+    font-size: 38px;
+    color: rgba(0, 0, 0, 1);
+    
+    
+    font-family: 'heading-font';
+  }
+
+    
+.type-of-course-giveway{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    
+    width: 70%;
+    font-family: 'heading-medium';
+  }
+
+.heading-giveway{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+    
+    
+    font-family: 'heading-heavy';
+}
+.give-way-img {
+    width: 100%;
+    height: 700px;
+    
+    object-fit: cover;
+    border-radius: 20px !important;
+    
+    
+    
+}  
+  .give-way-img-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    padding-left: 6%;
+    padding-top: 8%;
+    padding-right: 5%;
+  }
+
+  .type-of-course-create-giveway{
+    font-size: 20px;
+    color:rgba(196, 1, 22, 1);
+    
+    text-transform: capitalize;
+    font-family: 'heading-font';
+  }
+  .type-of-course-create-resource{
+    font-size: 38px;
+    color:rgba(196, 1, 22, 1);
+    
+    text-transform: capitalize;
+    font-family: 'heading-font';
+  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 481px) {
+    .give-way-img {
+        width: 95%;
+        height: 500px;
+        padding-left:0px;
+        padding-top: 0%;
+        padding-right: 0%;
+        object-fit: cover;
+        border-radius: 20px !important;
+        
+        
+        
+    } 
+    .give-way-img-wrapper {
+        padding-left: 5%;
+    }
+    .free-box{
+        width: 100%;
+        
+    }
+    .resource-image img{
+        width: 80px;
+        height: 80px;
+        
+    }
+    .type-of-course-giveway{
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+        
+        width: 90%;
+        font-family: 'heading-medium';
+      }
+    .daily-report-land{
+        font-size: 14px;
+        padding-top: 5%;
+    }
+    .download-div{
+        width:200px;
+        height: 30px;
+        margin-right: 1%;
+        margin-top: 10%;
+
+    }
+    .download-free-map{
+        font-size: 12px;
+        padding: 0px 4px;
+    }
+    .download-icon-free{
+        font-size: 12px;
+    }
+    .type-of-course-resource{
+        font-size: 22px;
+    }
+    .type-of-course-create-resource{
+        font-size: 22px;
+    }
+    .pad-download-button{
+        
+        display: flex;
+        justify-content:start;
+        margin-top: 10px;
+    }
+    
+}

@@ -1,0 +1,107 @@
+.ui-ux-webinars {
+    width: 389px;
+    border-radius: 20px;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+  }
+  
+  .ui-ux:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .course-image{
+    width: 100%;
+    
+    object-fit: cover;
+  
+   
+  }
+  .webinar-name{
+    font-size: 24px;
+    color: #333333;
+    font-family: 'heading-heavy';
+  }
+  .course-name-demand{
+    font-size: 22px;
+    color: rgba(57, 57, 57, 1);
+    font-family: 'heading-heavy';
+  }
+  .timer{
+    font-size: 18px;
+    color: rgba(196, 1, 22, 1);
+  }
+  .course-duration{
+    font-size: 16px;
+    color:rgba(51, 51, 51, 1);
+    font-family: 'heading-heavy';
+  }
+
+  .webinar-date{
+    background-color: #FFFFFF;
+    width: 135px;
+    height: 33px;
+    border-radius: 5px;
+   border: 1px solid #C40116;
+   color: #C40116;
+   font-family: 'heading-roman';
+   font-size: 15px;
+   position: absolute;
+   top: 2%;
+   left: 3%;
+
+  }
+  .webinar-location{
+    background-color: #FFFFFF;
+    width: 95px;
+    height: 30px;
+    border-radius: 5px;
+   border: 1px solid #C40116;
+   color: #C40116;
+   font-family: 'heading-roman';
+   font-size: 15px;
+   position: absolute;
+   top: 60%;
+   right: 2%;
+
+  }
+  .text-webinars{
+    background: rgb(173,0,0);
+    background: linear-gradient(184deg, rgba(173,0,0,1) 0%, rgba(71,0,0,1) 100%);
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid  rgb(173,0,0);
+    color: #FFFFFF;
+    font-family: 'heading-heavy';
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.2);
+
+
+
+
+  }
+
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 767px)  { }
+
+
+/* small screen */
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+
+}
+
+
+/* desktop  screen */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {}
+@media only screen and (max-width: 481px) {
+    .ui-ux-webinars {
+        
+        width:99%;
+        
+      }
+      .webinar-location{
+        top: 55%;
+      }
+}

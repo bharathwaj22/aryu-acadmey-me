@@ -1,0 +1,66 @@
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 50;
+  }
+  
+  .popup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    text-align: center;
+  }
+  
+  .popup-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .popup-container p {
+    margin-bottom: 15px;
+  }
+  
+  .popup-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup-container label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .popup-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .popup-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background-color: #3b82f6;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .close-btn {
+    background-color: #ef4444;
+    color: white;
+  }
+  

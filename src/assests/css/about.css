@@ -1,0 +1,921 @@
+.what-we{
+    font-family: 'heading-roman';
+    font-size: 12px;
+    color: rgba(173, 0, 0, 1);
+    text-transform: uppercase;
+}
+.education-about{
+    font-size: 33px;
+    color: rgba(15, 34, 57, 1);
+    
+    
+    font-family: 'heading-font';
+  }
+.education-about-tail{
+    font-size: 33px;
+    color:rgba(196, 1, 22, 1);
+    
+    
+    font-family: 'heading-font';
+}
+.live-support{
+    width: 333px;
+    height: 261px;
+    border: 1px solid rgba(208, 219, 233, 1);
+    border-radius: 7.5px;
+}
+.live-support-expert{
+    width: 333px;
+    height: 261px;
+    border: 1px solid rgba(173, 0, 0, 1);
+    color:rgba(208, 219, 233, 1) ;
+    border-radius: 7.5px;
+    background: rgb(173,0,0);
+    background: linear-gradient(184deg, rgba(173,0,0,1) 0%, rgba(71,0,0,1) 100%);}
+
+.icon-container-about {
+    width: 75px;
+    height: 75px;
+    background-color: rgba(173, 0, 0, 1); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+
+  
+.insta-about {
+    font-size: 38px;
+    color: rgba(255, 255, 255, 1);
+} 
+
+.icon-container-expert {
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 1); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* all hover */
+.live-support:hover{
+    color:rgba(208, 219, 233, 1) ;
+    border-radius: 7.5px;
+    background: rgb(173,0,0);
+    background: linear-gradient(184deg, rgba(173,0,0,1) 0%, rgba(71,0,0,1) 100%);
+}
+.live-support:hover .icon-container-about{
+    background-color: rgba(255, 255, 255, 1); 
+
+}
+.live-support:hover .insta-about{
+    color: rgb(173,0,0);
+}
+.live-support:hover .learm-about{
+    color:rgba(208, 219, 233, 1) ;
+}
+.live-support:hover .learn-about-details{
+    color:rgba(208, 219, 233, 1) ;
+}
+
+
+
+/*  */
+.insta-expert {
+    font-size: 38px;
+    color:rgba(173, 0, 0, 1);
+}
+.learm-about{
+    font-family: 'heading-font';
+    font: size 18px;
+    color: rgba(15, 34, 57, 1); 
+    /* text-transform: capitalize; */
+}
+
+.learn-about-details{
+    font-family: 'heading-medium';
+    font-size: 18px;
+    color: rgba(77, 87, 101, 1);
+    /* text-transform: capitalize; */
+    line-height: 24.5px;
+}
+
+.learn-about-expert{
+    font-family: 'heading-font';
+    font: size 18px;
+    color: rgba(255, 255, 255, 1); 
+    /* text-transform: capitalize; */
+}
+
+.learn-about-details-expert{
+    font-family: 'heading-medium';
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    /* text-transform: capitalize; */
+    line-height: 24.5px;
+
+   
+
+}
+/* .welcome-aryu{
+    background-color: rgba(242, 244, 246, 1); 
+    background-image: linear-gradient(to left, rgba(231, 238, 251, 1), rgba(243, 245, 249, 1) );  
+} */
+
+.welcome-aryu {
+    background-image: url(../images/aboutUs/about-bg-line.svg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.aryu-webpage{
+    width: 512px;
+    height: 369px;
+    
+}
+.aryu-web-div{
+    width: 281px;
+    height: 369px;
+    background-color: rgba(159, 170, 183, 1);
+    border-radius: 7.5px;
+    
+}
+.aryu-web-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 7.5px;
+  }
+.aryu-web-div1{
+    width:167px;
+    height: 147px;
+    background: rgb(173,0,0);
+    background: linear-gradient(184deg, rgba(173,0,0,1) 0%, rgba(71,0,0,1) 100%);
+    color: aliceblue;
+    border-radius: 7.5px;
+    text-align: center;
+}
+.aryu-web-div2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 7.5px;
+  }
+.aryu-web-div2{
+    width:167px;
+    height:204px;
+    background-color: rgba(159, 170, 183, 1);
+    border-radius: 7.5px;
+}
+.book-text{
+    width: 250px;
+    height: 39px;
+   
+}
+.book-image{
+    width: 37px;
+    height: 37px;
+}
+.book-details{
+    color: rgba(15, 34, 57, 1);
+    font-family: 'heading-heavy';
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.book-time{
+    color: rgba(77, 87, 101, 1);
+    font-family: 'heading-roman';
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.empty-aryu-box{
+    width: 157px;
+    height: 70px;
+    border-radius: 7.5px;
+    background-color: rgba(159, 170, 183, 1);
+}
+.click-icon{
+    size: 13px;
+   color: rgba(13, 94, 244, 1);
+}
+.click-text{
+    color: rgba(15, 34, 57, 1);
+    font-family: 'heading-roman';
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.about-btn{
+    width: 112px;
+    height: 30px;
+    border-radius: 3.75px;
+    background-color: rgba(173, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'heading-roman';
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid rgba(173, 0, 0, 1);
+    cursor: pointer;
+    
+
+}
+.about-completed{
+    background: rgb(196,1,22);
+    background: linear-gradient(73deg, rgba(196,1,22,1) 0%, rgba(94,0,11,1) 100%);
+        /* background-image: linear-gradient(to left, rgba(173, 0, 0, 1), rgba(71, 0, 0, 1) );   */
+  /* height: 165px; */
+}
+.about-complete-box{
+    width: 100px;
+    height: 75px;
+    color: rgba(255, 255, 255, 1);
+    
+}
+.completed-count-about{
+    font-family: 'heading-font';
+    font-size: 33px;
+}
+.completed-name-about{
+    font-family:'heading-roman';
+    font-size: 14px;
+
+}
+.about-border{
+    border: 1px solid rgba(255, 255, 255, 1);
+    height: 165px;
+}
+.mobile-about{
+    width: 75%;
+}
+
+.our-expert-round{
+    width: 245px;
+    height: 311px;
+
+}
+
+/* cricel animation */
+
+
+.circle-container {
+    position: relative;
+    width: 207px;
+    height: 207px;
+}
+
+/* Circle with Running Red Line */
+.running-line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(208, 219, 233, 1);
+    border-top: 4px solid rgba(242, 15, 16, 1); 
+    
+    border-radius: 50%;
+    transform-origin: center;
+    animation: rotate-line 6s linear infinite;
+}
+
+@keyframes rotate-line {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+/* .center-circle img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+} */
+
+.instructor-name{
+    font-family:'heading-roman';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(15, 34, 57, 1);
+}
+.instructor-role{
+    color: rgba(242, 15, 16, 1);
+    font-family:'heading-roman';
+    font-size: 14px;
+    
+}
+.popular-courses{
+ width: 508px;
+ height: 247px;
+ background-color:rgba(243, 247, 251, 1);
+ background-image: linear-gradient(to left, rgb(223, 117, 117), rgba(196, 1, 22, 1));
+ border-radius: 15px;
+ position: relative;
+
+}
+.popular-head {
+    font-family: 'heading-roman';
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+.popular-details{
+    color:rgba(255, 255, 255, 1);
+    font-family: 'heading-roman';
+    font-size: 22px;
+    width: 247px;
+}
+.join-btn{
+    width: 124px;
+    height: 39px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3.75px;
+    color: rgba(173, 0, 0, 1);
+    font-size: 10.5px;
+    font-family: 'heading-roman';
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+
+.std-img-about{
+    
+   
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    
+}
+.std-img-about-bha{
+    
+   
+    overflow: hidden;
+    position: absolute;
+    top: -15%;
+    
+    right: 0%;
+}   
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media only screen and (min-width: 481px) and (max-width: 767px)  { 
+    .aryu-webpage {
+        width: 100%;
+        height: auto;
+    }
+
+    .aryu-web-div {
+        width: 100%;
+        height: 369px;
+        border-radius: 5px;
+    }
+
+    .aryu-web-div1, .aryu-web-div2 {
+        width: 100%;
+        height: 369px;
+        border-radius: 5px;
+    }
+
+    .book-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .book-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .book-details {
+        font-size: 14px;
+    }
+
+    .book-time {
+        font-size: 11px;
+    }
+    .popular-courses {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        padding: 15px;
+      }
+    
+      .popular-head {
+        font-size: 10px;
+      }
+    
+      .popular-details {
+        font-size: 18px;
+        width: 100%;
+      }
+    
+      .std-img-about{
+      
+        height: 80%;
+        width: 70%;
+        
+         overflow: hidden;
+         position: absolute;
+         top: 0%;
+         
+         
+         
+     }  
+ 
+     .std-img-about-bha{
+         
+         height: 100%;
+        
+         overflow: hidden;
+         position: absolute;
+         top: 0px;
+         right: 0%;
+         
+         
+     }   
+      .join-btn {
+        width: 100px;
+        height: 35px;
+        font-size: 9px;
+      }
+
+      /* rounded */
+      .our-expert-round {
+        width: 200px;
+        height: 260px;
+    }
+
+    .circle-container {
+        width: 180px;
+        height: 180px;
+    }
+    .instructor-respone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .running-line {
+        width: 100%;
+        height: 100%;
+        border-top: 3px solid rgba(242, 15, 16, 1); 
+    }
+
+    .center-circle {
+        width: 75%;
+        height: 75%;
+    }
+
+    .instructor-name {
+        font-size: 16px;
+    }
+
+    .instructor-role {
+        font-size: 10px;
+    }
+    /* about complted */
+    .about-completed {
+        background-color: rgba(173, 0, 0, 1); /* Keep the background color the same */
+    }
+
+    .about-complete-box {
+        width: 90px;
+        height: 60px;
+    }
+    .mobile-about{
+        display: flex;
+     
+       
+        width: 100%;
+        
+        
+       
+     }
+     .click-text{
+        font-size: 12px;
+        
+     }  
+
+    .completed-count-about {
+        font-size: 24px;
+    }
+
+    .completed-name-about {
+        font-size: 13px;
+    }
+
+    .about-border {
+        height: 140px;
+    }
+
+    
+}
+
+@media (max-width: 481px) {
+    .aryu-webpage {
+        padding: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    .aryu-web-div {
+        width: 100%;
+        height: auto;
+    }
+
+    .book-details, .book-time {
+        font-size: 12px;
+    }
+
+    .book-image {
+        width: 25px;
+        height: 25px;
+    }
+    .popular-courses {
+        width: 90%;
+      margin: 0 auto;
+        height: auto;
+        padding: 30px;
+      }
+    
+      .popular-head {
+        font-size: 8px;
+      }
+    
+      .popular-details {
+        font-size: 16px;
+        width: 50%;
+      }
+
+      .std-img-about{
+      
+       height: 100%;
+       width: 70%;
+       
+        overflow: hidden;
+        position: absolute;
+        
+        
+        
+        
+    }  
+
+    .std-img-about-bha{
+        
+        height: 100%;
+       
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        
+        
+    } 
+    
+      .join-btn {
+        width: 90px;
+        height: 30px;
+        font-size: 8px;
+      }
+      /* rounded */
+      .our-expert-round {
+        width: 170px;
+        height: 220px;
+        margin: 0 auto;
+    }
+    .instructor-respone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .circle-container {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .running-line {
+        border-top: 2px solid rgba(242, 15, 16, 1); 
+    }
+
+    .center-circle {
+        width: 70%;
+        height: 70%;
+    }
+
+    .instructor-name {
+        font-size: 14px;
+    }
+
+    .instructor-role {
+        font-size: 10px;
+    }
+    /* about complted */
+    .about-completed {
+        background-color: rgba(173, 0, 0, 1);
+    }
+
+    .about-complete-box {
+        width: 70px;
+        height: 50px;
+    }
+    .mobile-about{
+       display: flex;
+    
+      
+       width: 100%;
+       
+       
+      
+    }
+    .completed-count-about {
+        font-size: 18px;
+    }
+
+    .completed-name-about {
+        font-size: 12px;
+    }
+
+    .about-border {
+        height: 120px;
+    }
+   
+ 
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)  { 
+    .popular-courses {
+        width: 90%;
+      margin: 0 auto;
+        height: auto;
+        padding: 30px;
+      }
+
+      .std-img-about{
+      
+        height: 100%;
+        /* width: 70%; */
+        
+         overflow: hidden;
+         position: absolute;
+         right: 0%;
+         
+         
+         
+     }  
+ 
+     .std-img-about-bha{
+         
+         height: 100%;
+        
+         overflow: hidden;
+         position: absolute;
+         top: 0px;
+         right: 0%;
+         
+     } 
+     .aryu-webpage{
+        width: 80%;
+        /* height: ; */
+        
+    }
+    .aryu-web-div{
+        width: 50%;
+        height: 100%;
+        background-color: rgba(159, 170, 183, 1);
+        border-radius: 7.5px;
+        
+    }
+    .aryu-web-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 7.5px;
+      }
+    .aryu-web-div1{
+        width:167px;
+        height: 147px;
+        background: rgb(173,0,0);
+        background: linear-gradient(184deg, rgba(173,0,0,1) 0%, rgba(71,0,0,1) 100%);
+        color: aliceblue;
+        border-radius: 7.5px;
+        text-align: center;
+    }
+    .aryu-web-div2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 7.5px;
+      }
+    .aryu-web-div2{
+        width:167px;
+        height:204px;
+        background-color: rgba(159, 170, 183, 1);
+        border-radius: 7.5px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .popular-courses {
+        width: 90%;
+      margin: 0 auto;
+        height: auto;
+        padding: 30px;
+      }
+
+      .std-img-about{
+      
+        height: 100%;
+        /* width: 70%; */
+        
+         overflow: hidden;
+         position: absolute;
+         right: 0%;
+         
+         
+         
+     }  
+ 
+     .std-img-about-bha{
+         
+         height: 100%;
+        
+         overflow: hidden;
+         position: absolute;
+         top: 0px;
+         right: 0%;
+         
+     } 
+     .aryu-webpage{
+        width: 80%;
+        
+        /* height: ; */
+        
+    }
+    .aryu-web-div{
+        width: 40%;
+        /* height: 100%; */
+        height: 369px;
+        background-color: rgba(159, 170, 183, 1);
+        border-radius: 7.5px;
+        
+    }
+    .aryu-web-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 7.5px;
+      }
+    .aryu-web-div1{
+        width:100%;
+        height: 147px;
+        background: rgb(173,0,0);
+        background: linear-gradient(184deg, rgba(173,0,0,1) 0%, rgba(71,0,0,1) 100%);
+        color: aliceblue;
+        border-radius: 7.5px;
+        text-align: center;
+    }
+    .aryu-web-div2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 7.5px;
+      }
+    .aryu-web-div2{
+        width:100%;
+        height:204px;
+        background-color: rgba(159, 170, 183, 1);
+        border-radius: 7.5px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+    .popular-courses {
+        width: 90%;
+      margin: 0 auto;
+        height: auto;
+        padding: 30px;
+      }
+
+      .std-img-about{
+      
+        height: 100%;
+        /* width: 70%; */
+        
+         overflow: hidden;
+         position: absolute;
+         right: 0%;
+         
+         
+         
+     }  
+ 
+     .std-img-about-bha{
+         
+         height: 100%;
+        
+         overflow: hidden;
+         position: absolute;
+         top: 0px;
+         right: 0%;
+         
+     } 
+     .aryu-webpage{
+        width: 80%;
+
+        
+        /* height: ; */
+        
+    }
+    .aryu-web-div{
+        width: 40%;
+        /* height: 100%; */
+        height: 369px;
+        background-color: rgba(159, 170, 183, 1);
+        border-radius: 7.5px;
+        
+    }
+    .aryu-web-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 7.5px;
+      }
+    .aryu-web-div1{
+        width:100%;
+        height: 147px;
+        background: rgb(173,0,0);
+        background: linear-gradient(184deg, rgba(173,0,0,1) 0%, rgba(71,0,0,1) 100%);
+        color: aliceblue;
+        border-radius: 7.5px;
+        text-align: center;
+    }
+    .aryu-web-div2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 7.5px;
+      }
+    .aryu-web-div2{
+        width:100%;
+        height:204px;
+        background-color: rgba(159, 170, 183, 1);
+        border-radius: 7.5px;
+    }
+
+    .popular-courses{
+        width: 508px;
+        height: 247px;
+        background-color:rgba(243, 247, 251, 1);
+        background-image: linear-gradient(to left, rgb(223, 117, 117), rgba(196, 1, 22, 1));
+        border-radius: 15px;
+        position: relative;
+       
+       }
+}
