@@ -1,68 +1,150 @@
 import React, { useState, useEffect } from "react";
 import "../assests/css/popupImage.css";
-
+import { API_URL } from "../Config.js";
+import axios from "axios";
+import Swal from "sweetalert2";
 import { CAPCHA_URL } from "../Config.js";
 import ReCAPTCHA from "react-google-recaptcha";
-import confetti from "canvas-confetti";
-
 
 const PopupModal = ({ onClose }) => {
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    phn_no: "",
+
+    description: "",
+    // course:"Digital marketing",
+  });
+
+  // State to manage form errors
+  const [formErrors, setFormErrors] = useState({
+    name: false,
+    email: false,
+    phn_no: false,
+    description: false,
+  });
+
+  // Handle input change
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  console.log(formValues);
+  console.log(formErrors);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let errors = {}; // Initialize an empty object to store errors
+
+    // Validate each field
+    if (!formValues.name.trim()) {
+      errors.name = "Full name is required.";
+    }
+    if (!formValues.email.trim()) {
+      errors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
+      errors.email = "Email is invalid.";
+    }
+    if (!formValues.phn_no.trim()) {
+      errors.phn_no = "phn_no number is required.";
+    }
+    if (!formValues.description.trim()) {
+      errors.description = "description is required.";
+    }
+
+    // Update the state with errors
+    setFormErrors({
+     name: !!errors.name,
+      email: !!errors.email,
+      phn_no: !!errors.phn_no,
+      description: !!errors.description,
+    });
+
+    // If there are errors, prevent form submission
+    if (Object.keys(errors).length > 0) {
+      return;
+    }
+    const loader = document.getElementById("global-loader");
+    if (loader) loader.style.display = "flex";
+
+    const startTime = Date.now();
+    try {
+      console.log("hello", formValues);
+      const response = await axios.post(
+        `${API_URL}/api/v1/freeconslutaion
+      `,
+        formValues
+      );
+
+      console.log("Form submitted successfully:", response.data);
+      // Optionally, reset form values here
+      const elapsedTime = Date.now() - startTime;
+      const remainingTime = Math.max(500 - elapsedTime, 0);
+
+      setTimeout(() => {
+        if (loader) loader.style.display = "none";
+      }, remainingTime);
+
+      Swal.fire({
+        title: "Success!",
+        text: "Your form has been submitted successfully.",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+      // Close the popup after alert is dismissed
+      onClose(); // <-- This will close the modal
+    });
+
+      setFormValues({
+        name: "",
+        email: "",
+        phn_no: "",
+        description: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+
+      // SweetAlert2 ferror alert
+      // Swal.fire({
+      //   title: "Oops!",
+      //   text: "There was an error submitting your form. Please try again.",
+      //   icon: "error",
+      //   confirmButtonText: "OK",
+      // });
+    }
+  };
+
+  const handleKeyUp = (e) => {
+    const { name, value } = e.target;
+
+    setFormErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: value.trim() === "",
+    }));
+  };
+
   const [captchaValue, setCaptchaValue] = useState(null);
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value);
     console.log("Captcha value:", value);
   };
-//    useEffect(() => {
-//       const container = document.querySelector(".confetti-container");
-  
-//       const createConfetti = () => {
-//         const confetti = document.createElement("div");
-//         confetti.classList.add("confetti");
-  
-//         const size = Math.floor(Math.random() * 8) + 6;
-//         const left = Math.random() * window.innerWidth;
-  
-//         confetti.style.width = `${size}px`;
-//         confetti.style.height = `${size * 0.6}px`;
-//         confetti.style.backgroundColor = getRandomColor();
-//         confetti.style.left = `${left}px`;
-//         confetti.style.animationDuration = `${Math.random() * 3 + 4}s`;
-//         confetti.style.opacity = Math.random();
-//         confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
-  
-//         container.appendChild(confetti);
-  
-//         setTimeout(() => {
-//           confetti.remove();
-//         }, 7000);
-//       };
-  
-//       const getRandomColor = () => {
-//         const colors = [
-//           "#FF5733",
-//           "#FFC300",
-//           "#DAF7A6",
-//           "#33FFCE",
-//           "#FF33A8",
-//           "#8E44AD",
-//         ];
-//         return colors[Math.floor(Math.random() * colors.length)];
-//       };
-  
-//       const interval = setInterval(createConfetti, 150);
-//       return () => clearInterval(interval);
-//     }, []);
-    useEffect(() => {
-      // Bomb blast effect on page load
-      confetti({
-        particleCount: 200,
-        spread: 120,
-        origin: { y: 0.6 },
-      });
-    }, []);
+
+  // useEffect(() => {
+    
+  //   confetti({
+  //     particleCount: 200,
+  //     spread: 120,
+  //     origin: { y: 0.6 },
+  //   });
+  // }, []);
   return (
     <div className="popup-overlay-home">
-         <div className="confetti-container-open" aria-hidden="true"></div>
+      <div className="confetti-container-open" aria-hidden="true"></div>
 
       <div className="popup-box-home">
         <div className="close-button-home" onClick={onClose}>
@@ -72,26 +154,61 @@ const PopupModal = ({ onClose }) => {
           <div className="form-home-popup">
             <form>
               <div class="floating-label-group">
-                <input type="text" id="fullName" required placeholder=" " />
+                <input
+                  type="text"
+                  id="fullName"
+                  required
+                  placeholder=" "
+                  name="name"
+                  value={formValues.name}
+                  onChange={handleInputChange}
+                  onKeyUp={handleKeyUp}
+                />
+
                 <label for="fullName">
                   Full Name<span class="required">*</span>
                 </label>
               </div>
               <div class="floating-label-group">
-                <input type="text" id="email" required placeholder=" " />
+                <input
+                  type="text"
+                  id="email"
+                  required
+                  placeholder=" "
+                  name="email"
+                  value={formValues.email}
+                  onChange={handleInputChange}
+                  onKeyUp={handleKeyUp}
+                />
                 <label for="email">
                   Email<span class="required">*</span>
                 </label>
               </div>
               <div class="floating-label-group">
-                <input type="text" id="mobile" required placeholder=" " />
+                <input
+                  type="text"
+                  id="mobile"
+                  required
+                  placeholder=" "
+                  name="phn_no"
+                  value={formValues.phn_no}
+                  onChange={handleInputChange}
+                  onKeyUp={handleKeyUp}
+                />
                 <label for="mobile">
                   Phone Number<span class="required">*</span>
                 </label>
               </div>
 
               <div class="floating-label-group">
-                <select id="course" required>
+                <select
+                  id="course"
+                  required
+                  name="description"
+                  value={formValues.description}
+                  onChange={handleInputChange}
+                  onKeyUp={handleKeyUp}
+                >
                   <option value="" disabled selected hidden></option>
                   <option value="ui">UI/UX desginer</option>
                   <option value="graphic_desginer">Graphic desginer</option>
@@ -135,7 +252,7 @@ const PopupModal = ({ onClose }) => {
 
               <div className="d-flex justify-content-end">
                 <button
-                  //   onClick={handleSubmit}
+                  onClick={handleSubmit}
                   type="submit"
                   // className="apply-btn-courses mt-2"
                   className={`apply-btn-courses mt-2 ${

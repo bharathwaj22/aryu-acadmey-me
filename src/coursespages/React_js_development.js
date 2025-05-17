@@ -7,7 +7,7 @@ import Footer from "../components/Footer.js";
 
 // images
 
-import Coursesimage from "../assests/images/courses-banner-Img/FullStack-Development-course-in-Chennai.png";
+import Coursesimage from "../assests/images/courses-banner-Img/react-js-Course-chennai.png";
 import Html from "../assests/images/html.webp";
 
 import Css from "../assests/images/css.webp";

@@ -6,6 +6,7 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
+import PopupModal from "./PopupModel.js";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -82,18 +83,26 @@ function Header() {
   const [digiMarketingSubmenu, setDigiMarketingSubmenu] = useState(false);
   const [d3DesignSubmenu, set3dDesignSubmenu] = useState(false);
   const [cmsSubmenu, setCmsSubmenu] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const handleDivClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
       <section className="sticky-top">
         <div className="d-flex header-aryu align-items-center px-4">
-          <div className="col-6 d-flex align-items-center">
+          <div className="col-5 d-flex align-items-center">
             <NavLink to="/">
               <img src={Aryulogo} alt="logo" className="mr-2" />
             </NavLink>
             {/* <div className="aryu-name">ARYU</div>
             <div className="aryu-small mt-2 ml-2">Academy</div> */}
           </div>
-          <div className="col-6 d-flex   justify-content-evenly d-none d-lg-flex  ">
+          <div className="col-7 d-flex   justify-content-evenly d-none d-lg-flex  ">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -126,153 +135,167 @@ function Header() {
                 onMouseLeave={() => setPopupOpen(false)}
               >
                 <div className="header-div">
-                  <div className="head-course-heading">DESIGNER COURSE</div>
-                  <Link
-                    to="/ui-ux-desginer-course-in-chennai"
-                    className="submenu-item mt-4"
-                    onClick={() =>
-                      window.scrollTo({ top: 0, behavior: "instant" })
-                    }
-                  >
-                    UI/UX Design
-                  </Link>
-                  <Link
-                    to="/graphic-desgin-course-in-chennai"
-                    className="submenu-item"
-                  >
-                    Graphic Design
-                  </Link>
-                  <Link
-                    to="/video-editing-course-in-chennai"
-                    className="submenu-item"
-                  >
-                    Video Editor
-                  </Link>
-                </div>
-                <div>
-                  <div className="head-course-heading">
-                    FULL STACK DEVELOPMENT
+                  <div className="all-header-box">
+                    <div className="head-course-heading">DESIGNER COURSE</div>
+                    <Link
+                      to="/ui-ux-desginer-course-in-chennai"
+                      className="submenu-item mt-4"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "instant" })
+                      }
+                    >
+                      UI/UX Design
+                    </Link>
+                    <Link
+                      to="/graphic-desgin-course-in-chennai"
+                      className="submenu-item"
+                    >
+                      Graphic Design
+                    </Link>
+                    <Link
+                      to="/video-editing-course-in-chennai"
+                      className="submenu-item"
+                    >
+                      Video Editor
+                    </Link>
                   </div>
-                  <Link
-                    to="/full-stack-development-course-in-chennai"
-                    className="submenu-item mt-4"
-                  >
-                    Full Stack Development
-                  </Link>
-                  <Link
-                    to="/mern-stack-development-course-in-chennai"
-                    className="submenu-item "
-                  >
-                    MERN Stack Development
-                  </Link>
-                  <Link to="/python-course-in-chennai" className="submenu-item">
-                    Python Fullstack
-                  </Link>
-                  {/* <Link to="/react-native-course-in-chennai" className="submenu-item">
+                  <div className="all-header-box">
+                    <div className="head-course-heading">
+                      FULL STACK DEVELOPMENT
+                    </div>
+                    <Link
+                      to="/full-stack-development-course-in-chennai"
+                      className="submenu-item mt-4"
+                    >
+                      Full Stack Development
+                    </Link>
+                    <Link
+                      to="/mern-stack-development-course-in-chennai"
+                      className="submenu-item "
+                    >
+                      MERN Stack Development
+                    </Link>
+                    <Link
+                      to="/python-course-in-chennai"
+                      className="submenu-item"
+                    >
+                      Python Fullstack
+                    </Link>
+                    {/* <Link to="/react-native-course-in-chennai" className="submenu-item">
                     React Native
                   </Link> */}
-                </div>
-                {/* frontend */}
-
-                  <div>
-                  <div className="head-course-heading">FrontEnd Development</div>
-                  {/* <Link to="/php-mysql-course-in-chennai" className="submenu-item mt-4">
-                    PHP Development
-                  </Link> */}
-                  <Link
-                    to="/ui-frontend-development-course-in-chennai"
-                    className="submenu-item mt-4"
-                  >
-                    UI / FrontEnd development 
-                  </Link>
-                   <Link
-                    to="/react-js-development-course-in-chennai"
-                    className="submenu-item "
-                  >
-                    React JS development 
-                  </Link>
-                  {/* <Link to="/codeigniter-course-in-chennai" className="submenu-item">
-                    CodeIgniter
-                  </Link> */}
-
-                  <div className="head-course-heading mt-2">
-                    Software Testing
                   </div>
 
-                  <Link
-                    to="/manual-testing-course-in-chennai"
-                    className="submenu-item"
-                  >
-                    Manual Testing
-                  </Link>
+                  <div className="all-header-box">
+                    <div className="head-course-heading">CMS</div>
+                    <Link
+                      to="/wordpress-course-in-chennai"
+                      className="submenu-item mt-4"
+                    >
+                      WordPress
+                    </Link>
+                    <Link
+                      to="/webflow-course-in-chennai"
+                      className="submenu-item"
+                    >
+                      Webflow
+                    </Link>
+                    <Link
+                      to="/shopify-course-in-chennai"
+                      className="submenu-item"
+                    >
+                      Shopify
+                    </Link>
+                  </div>
+                  <div className="all-header-box">
+                    <div className="head-course-heading"> MARKETING</div>
+                    <Link
+                      to="/digital-marketing-course-in-chennai"
+                      className="submenu-item mt-4"
+                    >
+                      Digital Marketing
+                    </Link>
+                    <Link to="/seo-course-in-chennai" className="submenu-item">
+                      SEO
+                    </Link>
+                    <Link
+                      to="/social-media-marketing-course-in-chennai"
+                      className="submenu-item"
+                    >
+                      Social Media Marketing
+                    </Link>
+                  </div>
                 </div>
+                <div className="header-div mt-4">
+                  {/* frontend */}
 
-                {/* lavral */}
-                <div>
-                  <div className="head-course-heading">PHP FRAMEWORKS</div>
-                  {/* <Link to="/php-mysql-course-in-chennai" className="submenu-item mt-4">
+                  <div className="all-header-box">
+                    <div className="head-course-heading">
+                      FrontEnd Development
+                    </div>
+                    {/* <Link to="/php-mysql-course-in-chennai" className="submenu-item mt-4">
                     PHP Development
                   </Link> */}
-                  <Link
-                    to="/laravel-course-in-chennai"
-                    className="submenu-item mt-4"
-                  >
-                    Laravel
-                  </Link>
-                  {/* <Link to="/codeigniter-course-in-chennai" className="submenu-item">
+                    <Link
+                      to="/ui-frontend-development-course-in-chennai"
+                      className="submenu-item mt-4"
+                    >
+                      UI / FrontEnd Development
+                    </Link>
+                    <Link
+                      to="/react-js-development-course-in-chennai"
+                      className="submenu-item "
+                    >
+                      React JS Development
+                    </Link>
+                    {/* <Link to="/codeigniter-course-in-chennai" className="submenu-item">
                     CodeIgniter
                   </Link> */}
+                  </div>
+                  
+                  {/* react native */}
+                  <div className="all-header-box">
+                    <div className="head-course-heading ">
+                      MOBILE APP DEVELOPMENT
+                    </div>
 
-                  <div className="head-course-heading mt-2">
-                    MOBILE APP DEVELOPMENT
+                    <Link
+                      to="/react-native-course-in-chennai"
+                      className="submenu-item mt-4"
+                    >
+                      React Native
+                    </Link>
                   </div>
 
-                  <Link
-                    to="/react-native-course-in-chennai"
-                    className="submenu-item"
-                  >
-                    React Native
-                  </Link>
-                </div>
+                  {/* testing */}
+                  <div className="all-header-box">
+                    <div className="head-course-heading ">
+                      Software Testing
+                    </div>
 
-                <div>
-                  <div className="head-course-heading">CMS</div>
-                  <Link
-                    to="/wordpress-course-in-chennai"
-                    className="submenu-item mt-4"
-                  >
-                    WordPress
-                  </Link>
-                  <Link
-                    to="/webflow-course-in-chennai"
-                    className="submenu-item"
-                  >
-                    Webflow
-                  </Link>
-                  <Link
-                    to="/shopify-course-in-chennai"
-                    className="submenu-item"
-                  >
-                    Shopify
-                  </Link>
-                </div>
-                <div>
-                  <div className="head-course-heading"> MARKETING</div>
-                  <Link
-                    to="/digital-marketing-course-in-chennai"
-                    className="submenu-item mt-4"
-                  >
-                    Digital Marketing
-                  </Link>
-                  <Link to="/seo-course-in-chennai" className="submenu-item">
-                    SEO
-                  </Link>
-                  <Link
-                    to="/social-media-marketing-course-in-chennai"
-                    className="submenu-item"
-                  >
-                    Social Media Marketing
-                  </Link>
+                    <Link
+                      to="/manual-testing-course-in-chennai"
+                      className="submenu-item mt-4"
+                    >
+                      Manual Testing
+                    </Link>
+                  </div>
+                  {/* lavral */}
+                  <div className="all-header-box">
+                    <div className="head-course-heading">PHP FRAMEWORKS</div>
+                    {/* <Link to="/php-mysql-course-in-chennai" className="submenu-item mt-4">
+                    PHP Development
+                  </Link> */}
+                    <Link
+                      to="/laravel-course-in-chennai"
+                      className="submenu-item mt-4"
+                    >
+                      Laravel
+                    </Link>
+                    {/* <Link to="/codeigniter-course-in-chennai" className="submenu-item">
+                    CodeIgniter
+                  </Link> */}
+                  </div>
                 </div>
                 {/* <div>
                   <div className="head-course-heading">3D DESIGNING</div>
@@ -309,6 +332,16 @@ function Header() {
             >
               Contact
             </NavLink>
+
+            {/* <div>
+  <div className="corner-animated-border"  onClick={handleDivClick}>
+  <span className="top-left-line"></span>
+  <span className="bottom-right-line"></span>
+    Start your training
+  </div>
+
+  {showPopup && <PopupModal onClose={handleClosePopup} className="suma" />}
+</div> */}
           </div>
           <div className="col-6 d-flex justify-content-end d-lg-none">
             <BiMenuAltRight
@@ -329,11 +362,10 @@ function Header() {
             <NavLink to="/" className="mobile-aryu-list">
               Home
             </NavLink>
-            
+
             <NavLink to="/about-us" className="mobile-aryu-list">
               About
             </NavLink>
-            
 
             {/* Courses Dropdown */}
             <NavLink
@@ -544,7 +576,7 @@ function Header() {
                   }}
                   className="mobile-aryu-inside d-flex justify-content-between"
                 >
-                   Marketing{" "}
+                  Marketing{" "}
                   <span>
                     {digiMarketingSubmenu ? (
                       <MdKeyboardArrowUp />
@@ -588,23 +620,36 @@ function Header() {
                   }}
                   className="mobile-aryu-inside d-flex justify-content-between"
                 >
-                  Mobile App Development <span>{d3DesignSubmenu ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}</span>
+                  Mobile App Development{" "}
+                  <span>
+                    {d3DesignSubmenu ? (
+                      <MdKeyboardArrowUp />
+                    ) : (
+                      <MdKeyboardArrowDown />
+                    )}
+                  </span>
                 </NavLink>
                 {d3DesignSubmenu && (
                   <div className="coursesubmenu d-flex flex-column ms-2">
-                  <NavLink to="/react-native-course-in-chennai" className="mobile-aryu-inside-word">
-                    React Native
-                  </NavLink>
+                    <NavLink
+                      to="/react-native-course-in-chennai"
+                      className="mobile-aryu-inside-word"
+                    >
+                      React Native
+                    </NavLink>
                   </div>
                 )}
               </motion.div>
             )}
             <NavLink to="/free-resource" className="mobile-aryu-list">
-            Resource
+              Resource
             </NavLink>
-            <NavLink to="https://blog.aryuacademy.com/"
+            <NavLink
+              to="https://blog.aryuacademy.com/"
               target="_blank"
-              rel="noopener noreferrer" className="mobile-aryu-list">
+              rel="noopener noreferrer"
+              className="mobile-aryu-list"
+            >
               Blog
             </NavLink>
 

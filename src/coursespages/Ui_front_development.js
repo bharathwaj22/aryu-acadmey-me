@@ -7,12 +7,12 @@ import Footer from "../components/Footer.js";
 
 // images
 
-import Coursesimage from "../assests/images/courses-banner-Img/FullStack-Development-course-in-Chennai.png";
-import Html from "../assests/images/html.webp";
+import Coursesimage from "../assests/images/courses-banner-Img/UI-Frontend-Development-Course-chennai.svg";
+import Html from "../assests/images/tools/html.svg";
 
-import Css from "../assests/images/css.webp";
+import Css from "../assests/images/tools/css.svg";
 
-import JavaScript from "../assests/images/js.webp";
+import JavaScript from "../assests/images/tools/javascript.svg";
 
 import WordPress from "../assests/images/wp.webp";
 
@@ -381,24 +381,27 @@ function Ui_front_development() {
                 <img
                   title="VisualStudio"
                   src={VisualStudioCode}
-                  alt="html"
-                  className="Visual Studio Code tools used in Aryu Academy’s Full Stack Development course for writing and debugging code."
+                  className="tool-used-image"
+                  alt="Visual Studio Code tools used in Aryu Academy’s Full Stack Development course for writing and debugging code."
                 />
-                {/* <img
-                  src={Git}
-                  alt="css"
-                  className="Git tools used in Aryu Academy’s Full Stack Development course for version control and collaboration on projects."
-                /> */}
-                {/* <img
-                  src={Postman}
-                  alt="Postman tool used in Aryu Academy’s Full Stack Development course for testing APIs and ensuring smooth communication."
+                <img
+                  src={Html}
+                  title="Html"
                   className="tool-used-image"
-                /> */}
-                {/* <img
-                  src={MongoDB}
-                  alt="MongoDB tool used in Aryu Academy’s Full Stack Development course for managing & querying databases in JavaScript apps."
+                  alt="Html tools used in Aryu Academy’s Full Stack Development course for version control and collaboration on projects."
+                />
+                <img
+                  src={Css}
+                  title="CSS"
+                  alt="css tool used in Aryu Academy’s Full Stack Development course for testing APIs and ensuring smooth communication."
                   className="tool-used-image"
-                /> */}
+                />
+                <img
+                  src={JavaScript}
+                  title="JavaScript"
+                  alt="JavaScript tool used in Aryu Academy’s Full Stack Development course for managing & querying databases in JavaScript apps."
+                  className="tool-used-image"
+                />
                 {/* <img
                   src={XAMPP}
                   alt="XAMPP tool used in Aryu Academy’s Full Stack Development course for setting up a local server for web development."
