@@ -848,20 +848,32 @@ function Ui_front_development() {
                           Module 10:
                         </Typography>
                         <Typography component="span" className="text-drop mt-1">
-                          jQuery Basics
+                          Final Touches & UI Workflow
                         </Typography>
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="text-drop-details">
                         <ul>
-                          <li>Introduction to jQuery</li>
                           <li>
-                            Final Project: Creating and Launching a Store in
-                            Your Niche
+                            Designing UI with Figma (Wireframes and Prototypes)
                           </li>
-                          <li>jQuery syntax and usage</li>
-                          <li>jQuery for UI effects and animation</li>
+                          <li>
+                            Converting Figma to Code (HTML, CSS,
+                            JavaScript/React)
+                          </li>
+                          <li>
+                            Clean Code Practices and Component Reusability
+                          </li>
+                          <li>Cross-Browser Testing and Debugging</li>
+                          <li>Accessibility and Performance Optimization</li>
+                          <li>UI/UX Testing and Incorporating User Feedback</li>
+                          <li>Code Reviews and Team Collaboration</li>
+                          <li>Final Project: From Design to Deployment</li>
+                          <li>
+                            Introduction to CI/CD for Frontend (GitHub Actions,
+                            Netlify)
+                          </li>
                         </ul>
                       </Typography>
                     </AccordionDetails>
