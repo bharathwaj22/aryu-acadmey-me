@@ -158,78 +158,60 @@
 }
 
 /* header start  training css*/
-
-.corner-animated-border {
+.animated-border-button {
   position: relative;
   display: inline-block;
-  padding: 16px 28px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #ffd700; /* Yellow */
-  background-color: #2c2c2c; /* Dark background */
-  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #ffd800;
+  background: #1c1c28;
+  border-radius: 8px;
+  font-family: "Gilroy-SemiBold", Arial, sans-serif;
   overflow: hidden;
-  cursor: pointer;
-}
-
-.corner-animated-border span {
-  position: absolute;
-  display: block;
+  text-transform: uppercase;
   z-index: 1;
 }
 
-/* Top-left animation */
-.corner-animated-border .top-left {
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background: linear-gradient(90deg, #8e2de2, #f953c6, #8e2de2);
-  background-size: 200% auto;
-  animation: border-run-horizontal 2s linear infinite;
-}
-
-.corner-animated-border .top-left::after {
-  content: '';
+/* Animation line wrapper */
+.animated-border-button span {
   position: absolute;
   top: 0;
   left: 0;
-  
-  background: linear-gradient(180deg, #8e2de2, #f953c6, #8e2de2);
-  background-size: 200% auto;
-  animation: border-run-vertical 2s linear infinite;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-/* Bottom-right animation */
-.corner-animated-border .bottom-right {
-  bottom: 0;
-  right: 0;
-  width: 40px;
-  height: 2px;
-  background: linear-gradient(90deg, #f953c6, #8e2de2, #f953c6);
-  background-size: 200% auto;
-  animation: border-run-horizontal 2s linear infinite;
-}
-
-.corner-animated-border .bottom-right::after {
+.animated-border-button span::before {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 2px;
-  height: 40px;
-  background: linear-gradient(180deg, #f953c6, #8e2de2, #f953c6);
-  background-size: 200% auto;
-  animation: border-run-vertical 2s linear infinite;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #ff0057,
+    #7a00ff,
+    #00fff7,
+    #ff0057
+  );
+  background-size: 400% 400%;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: borderRun 3s linear infinite;
+  z-index: 2;
+  pointer-events: none;
 }
 
-/* Animations */
-@keyframes border-run-horizontal {
-  0% { background-position: 0% center; }
-  100% { background-position: 200% center; }
-}
-
-@keyframes border-run-vertical {
-  0% { background-position: center 0%; }
-  100% { background-position: center 200%; }
+@keyframes borderRun {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
 }

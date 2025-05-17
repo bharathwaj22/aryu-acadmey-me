@@ -252,7 +252,7 @@ function Header() {
                     CodeIgniter
                   </Link> */}
                   </div>
-                  
+
                   {/* react native */}
                   <div className="all-header-box">
                     <div className="head-course-heading ">
@@ -269,9 +269,7 @@ function Header() {
 
                   {/* testing */}
                   <div className="all-header-box">
-                    <div className="head-course-heading ">
-                      Software Testing
-                    </div>
+                    <div className="head-course-heading ">Software Testing</div>
 
                     <Link
                       to="/manual-testing-course-in-chennai"
@@ -332,16 +330,17 @@ function Header() {
             >
               Contact
             </NavLink>
+{/* 
+            <div>
+              <div class="animated-border-button" onClick={handleDivClick}>
+                7 Days Free Trial
+                <span></span>
+              </div>
 
-            {/* <div>
-  <div className="corner-animated-border"  onClick={handleDivClick}>
-  <span className="top-left-line"></span>
-  <span className="bottom-right-line"></span>
-    Start your training
-  </div>
-
-  {showPopup && <PopupModal onClose={handleClosePopup} className="suma" />}
-</div> */}
+              {showPopup && (
+                <PopupModal onClose={handleClosePopup} className="suma" />
+              )}
+            </div> */}
           </div>
           <div className="col-6 d-flex justify-content-end d-lg-none">
             <BiMenuAltRight
