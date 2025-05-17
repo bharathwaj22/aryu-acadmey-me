@@ -149,8 +149,8 @@
   
   position: absolute;
   top: 70px;
-  left: 2%;
-  width: 95vw; 
+  left: 4%;
+  width: 90vw; 
   background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
   max-height: 0;
@@ -158,9 +158,9 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   
-  display: flex;
+  /* display: flex;
   
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
   padding: 10px;
   z-index: 1;
 }
@@ -250,6 +250,7 @@
   font-size: 20px;
   color: rgb(21, 20, 20);
   text-transform: uppercase;
+  
 
 }
 .arrow-icon-head {
@@ -262,5 +263,13 @@
 
 
 /* dropdown */
-
+.header-div{
+   display: flex;
+  
+  justify-content:space-evenly;
+ padding-left: 2%;
+}
+.all-header-box{
+  width: 25%;
+}
 

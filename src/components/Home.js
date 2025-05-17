@@ -189,6 +189,8 @@ import Seo_img from "../assests/images/demandcourses/seodesgin.svg";
 import Smm_img from "../assests/images/demandcourses/smmdesgin.svg";
 import Creo_img from "../assests/images/demandcourses/creodesgin.svg";
 import { useNavigate } from "react-router-dom";
+import confetti from "canvas-confetti";
+
 // import { lazy } from "react";
 // import { Suspense } from "react";
 
@@ -203,27 +205,43 @@ function Home() {
   const [showPopup, setShowPopup] = useState(false);
   // const [showPopup, setShowPopup] = useState(true);
 
+ 
+  
   // useEffect(() => {
-  //   // Only show the popup once per session
   //   const hasSeenPopup = sessionStorage.getItem('seen-home-popup');
+
   //   if (!hasSeenPopup) {
-  //     setShowPopup(true);
-  //     sessionStorage.setItem('seen-home-popup', 'true');
+  //     const timer = setTimeout(() => {
+  //       setShowPopup(true);
+  //       sessionStorage.setItem('seen-home-popup', 'true');
+  //     }, 7000); // 7 seconds delay
+
+  //     // Clear the timer if the component unmounts before 7s
+  //     return () => clearTimeout(timer);
   //   }
   // }, []);
-  useEffect(() => {
-    const hasSeenPopup = sessionStorage.getItem('seen-home-popup');
+useEffect(() => {
+  const hasSeenPopup = sessionStorage.getItem('seen-home-popup');
 
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => {
-        setShowPopup(true);
-        sessionStorage.setItem('seen-home-popup', 'true');
-      }, 7000); // 7 seconds delay
+  if (!hasSeenPopup) {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+      sessionStorage.setItem('seen-home-popup', 'true');
 
-      // Clear the timer if the component unmounts before 7s
-      return () => clearTimeout(timer);
-    }
-  }, []);
+      // Trigger confetti when showing popup
+      confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 },
+      });
+    }, 7000); // 7 seconds delay
+
+    // Cleanup on unmount
+    return () => clearTimeout(timer);
+  }
+}, []);
+
+
   useEffect(() => {
     // Set page title
     document.title =
