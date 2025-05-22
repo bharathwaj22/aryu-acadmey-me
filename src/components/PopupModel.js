@@ -5,6 +5,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { CAPCHA_URL } from "../Config.js";
 import ReCAPTCHA from "react-google-recaptcha";
+import Mobile_popup from "../assests/images/aboutUs/home-popup-image-mobile.svg";
 
 const PopupModal = ({ onClose }) => {
   const [formValues, setFormValues] = useState({
@@ -59,7 +60,7 @@ const PopupModal = ({ onClose }) => {
 
     // Update the state with errors
     setFormErrors({
-     name: !!errors.name,
+      name: !!errors.name,
       email: !!errors.email,
       phn_no: !!errors.phn_no,
       description: !!errors.description,
@@ -96,9 +97,9 @@ const PopupModal = ({ onClose }) => {
         icon: "success",
         confirmButtonText: "OK",
       }).then(() => {
-      // Close the popup after alert is dismissed
-      onClose(); // <-- This will close the modal
-    });
+        // Close the popup after alert is dismissed
+        onClose(); // <-- This will close the modal
+      });
 
       setFormValues({
         name: "",
@@ -135,7 +136,7 @@ const PopupModal = ({ onClose }) => {
   };
 
   // useEffect(() => {
-    
+
   //   confetti({
   //     particleCount: 200,
   //     spread: 120,
@@ -147,13 +148,21 @@ const PopupModal = ({ onClose }) => {
       <div className="confetti-container-open" aria-hidden="true"></div>
 
       <div className="popup-box-home">
+        <div className="only-mobile">
+          <img src={Mobile_popup} className="mobile-popup-image" />
+        </div>
         <div className="close-button-home" onClick={onClose}>
           &times;
         </div>
-        <div className="d-flex justify-content-end">
+
+        <div className="all-popup-home-dlexx">
           <div className="form-home-popup">
             <form>
-              <div class="floating-label-group">
+              <div
+                className={`floating-label-group ${
+                  formErrors.name ? "border border-danger" : ""
+                }`}
+              >
                 <input
                   type="text"
                   id="fullName"
@@ -169,7 +178,11 @@ const PopupModal = ({ onClose }) => {
                   Full Name<span class="required">*</span>
                 </label>
               </div>
-              <div class="floating-label-group">
+              <div
+                className={`floating-label-group ${
+                  formErrors.email ? "border border-danger" : ""
+                }`}
+              >
                 <input
                   type="text"
                   id="email"
@@ -184,7 +197,11 @@ const PopupModal = ({ onClose }) => {
                   Email<span class="required">*</span>
                 </label>
               </div>
-              <div class="floating-label-group">
+              <div
+                className={`floating-label-group ${
+                  formErrors.phn_no ? "border border-danger" : ""
+                }`}
+              >
                 <input
                   type="text"
                   id="mobile"
@@ -200,7 +217,11 @@ const PopupModal = ({ onClose }) => {
                 </label>
               </div>
 
-              <div class="floating-label-group">
+              <div
+                className={`floating-label-group ${
+                  formErrors.description ? "border border-danger" : ""
+                }`}
+              >
                 <select
                   id="course"
                   required

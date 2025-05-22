@@ -53,6 +53,11 @@
   
 }
 
+.all-popup-home-dlexx{
+  display: flex;
+  justify-content: end;
+}
+
 .floating-label-group {
   position: relative;
   margin: 20px 0;
@@ -214,4 +219,415 @@
   100% {
     background-position: 400% 50%;
   }
+}
+.only-mobile {
+  display: none;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px)  {
+  .popup-box-home {
+  width: 80%;
+  /* max-width: 500px; */
+  height: 75%;
+  background-image: url('../images//aboutUs/home-popup-image.svg'); /* your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10; 
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .popup-overlay-home{
+    height: 100%; /* Limits height to 90% of the viewport */
+  overflow-y: auto; 
+  }
+  .popup-box-home {
+  width: 90%;
+  /* max-width: 500px; */
+  height:auto;
+  background-image: url('../images//aboutUs/home-popup-image.svg'); /* your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10; 
+}
+}
+@media only screen and (min-width: 835px) and (max-width: 1023px) {
+  .popup-overlay-home{
+    height: 100%; /* Limits height to 90% of the viewport */
+  overflow-y: auto; 
+  }
+  .popup-box-home  {
+    width: 90%;
+    height: auto;
+    
+  /* max-width: 500px; */
+   
+   
+    background-image: none;
+  }
+  .only-mobile {
+    display: block;
+    width: 100%;
+   
+  }
+  .only-mobile img,
+.mobile-popup-image {
+  width: 104%;
+  height:100%;
+  display: block;
+  object-fit: cover; /* Optional: keeps aspect ratio inside container */
+}
+  .all-popup-home-dlexx{
+  display: flex;
+  justify-content:center;
+  background-color: #fff;
+}
+.form-home-popup {
+  border-radius: 10px;
+  margin-top: 2% ;
+  padding: 10px;
+  padding-left: 5%;
+  width: 100%;   /* take about 40% width of the popup */
+  height: 100%;
+  overflow-y: auto; /* scroll if content is long */
+  box-sizing: border-box;
+  
+}
+.floating-label-group input {
+  width: 80%;
+  padding: 20px 20px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+}
+
+.floating-label-group label {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  background: white;
+  color: #777;
+  font-size: 16px;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.floating-label-group select {
+  width: 80%;
+  padding: 20px 20px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  outline: none;
+}
+.close-button-home {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  /* background: white; */
+  border: none;
+  color: rgb(245, 244, 244);
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+}
+
+@media (max-width: 835px) {
+  .popup-overlay-home{
+    height: 100%; /* Limits height to 90% of the viewport */
+  overflow-y: auto; 
+  }
+  .popup-box-home  {
+    width: 90%;
+    height: auto;
+    
+  /* max-width: 500px; */
+   
+   
+    background-image: none;
+  }
+  .only-mobile {
+    display: block;
+    width: 100%;
+   
+  }
+  .only-mobile img,
+.mobile-popup-image {
+  width: 104%;
+  height:100%;
+  display: block;
+  object-fit: cover; /* Optional: keeps aspect ratio inside container */
+}
+  .all-popup-home-dlexx{
+  display: flex;
+  justify-content:center;
+  background-color: #fff;
+}
+.form-home-popup {
+  border-radius: 10px;
+  margin-top: 2% ;
+  padding: 10px;
+  padding-left: 5%;
+  width: 100%;   /* take about 40% width of the popup */
+  height: 100%;
+  overflow-y: auto; /* scroll if content is long */
+  box-sizing: border-box;
+  
+}
+.floating-label-group input {
+  width: 80%;
+  padding: 20px 20px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+}
+
+.floating-label-group label {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  background: white;
+  color: #777;
+  font-size: 16px;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.floating-label-group select {
+  width: 80%;
+  padding: 20px 20px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  outline: none;
+}
+.close-button-home {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  /* background: white; */
+  border: none;
+  color: rgb(245, 244, 244);
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+
+
+}
+
+
+@media (max-width: 768px) {
+  .popup-overlay-home{
+    height: 100%; /* Limits height to 90% of the viewport */
+  overflow-y: auto; 
+  }
+  .popup-box-home  {
+    width: 90%;
+    height: auto;
+    
+  /* max-width: 500px; */
+   
+   
+    background-image: none;
+  }
+  .only-mobile {
+    display: block;
+    width: 100%;
+    
+   
+  }
+  .only-mobile img,
+.mobile-popup-image {
+  width: 104%;
+  height:100%;
+  display: block;
+  object-fit: cover;
+   /* Optional: keeps aspect ratio inside container */
+}
+  .all-popup-home-dlexx{
+  display: flex;
+  justify-content:center;
+  background-color: #fff;
+}
+.form-home-popup {
+  border-radius: 10px;
+  margin-top: 2% ;
+  padding: 10px;
+  width: 100%;   /* take about 40% width of the popup */
+  height: 100%;
+  overflow-y: auto; /* scroll if content is long */
+  box-sizing: border-box;
+  
+}
+.floating-label-group input {
+  width: 100%;
+  padding: 16px 10px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+}
+
+.floating-label-group label {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  background: white;
+  color: #777;
+  font-size: 16px;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.floating-label-group select {
+  width: 100%;
+  padding: 16px 10px 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  outline: none;
+}
+.close-button-home {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  /* background: white; */
+  border: none;
+  color: rgb(245, 244, 244);
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+
+}
+
+
+@media (max-width: 481px) {
+  .popup-overlay-home{
+    height: 100%; /* Limits height to 90% of the viewport */
+  overflow-y: auto; 
+  }
+  .popup-box-home  {
+    width: 90%;
+    height: auto;
+    
+  /* max-width: 500px; */
+   
+   
+    background-image: none;
+  }
+  .only-mobile {
+    display: block;
+    width: 100%;
+   
+  }
+  .only-mobile img,
+.mobile-popup-image {
+  width: 104%;
+  height:100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px; /* Optional: keeps aspect ratio inside container */
+}
+  .all-popup-home-dlexx{
+  display: flex;
+  justify-content:center;
+  background-color: #fff;
+}
+.form-home-popup {
+  border-radius: 10px;
+  margin-top: 2% ;
+  padding: 10px;
+  width: 100%;   /* take about 40% width of the popup */
+  height: 100%;
+  overflow-y: auto; /* scroll if content is long */
+  box-sizing: border-box;
+  
+}
+.floating-label-group input {
+  width: 100%;
+  /* padding: 16px 10px 8px; */
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+}
+
+.floating-label-group label {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  background: white;
+  color: #777;
+  font-size: 16px;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.floating-label-group select {
+  width: 100%;
+  /* padding: 20px 20px 20px; */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  outline: none;
+}
+.close-button-home {
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  /* background: white; */
+  border: none;
+  color: rgb(245, 244, 244);
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+
 }

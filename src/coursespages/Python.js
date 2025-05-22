@@ -76,7 +76,7 @@ function Python_coruses() {
     // Set meta tags
     setMetaTag(
       "description",
-      "Our MERN Stack Development course in Chennai equips you with skills in React.js, Node.js, Express.js, MongoDB, and more to develop live web applications."
+      "Join Aryu Academy's Full Stack Python Course in Chennai to become a coding expert and build dynamic web apps with live projects and expert-led training."
     );
     setMetaTag(
       "keywords",
@@ -87,7 +87,7 @@ function Python_coruses() {
     setMetaTag("og:title", "Python course in chennai", true);
     setMetaTag(
       "og:description",
-      "Join Aryu Academy's Python and Django course in Chennai to become a coding expert and build dynamic web apps with live projects and expert-led training.",
+      "Join Aryu Academy's Full Stack Python Course in Chennai to become a coding expert and build dynamic web apps with live projects and expert-led training.",
       true
     );
     setMetaTag("og:image", ogimg, true);
@@ -97,24 +97,23 @@ function Python_coruses() {
     setMetaTag("twitter:title", "Python course in chennai", true);
     setMetaTag(
       "twitter:description",
-      "Join Aryu Academy's Python and Django course in Chennai to become a coding expert and build dynamic web apps with live projects and expert-led training.",
+      "JJoin Aryu Academy's Full Stack Python Course in Chennai to become a coding expert and build dynamic web apps with live projects and expert-led training.",
       true
     );
     setMetaTag("twitter:image", ogimg, true);
   }, []);
 
   const navigate = useNavigate();
-const homeRegisterForm = ()=>{
-  
-  navigate("/contact-us");
+  const homeRegisterForm = () => {
+    navigate("/contact-us");
 
-  setTimeout(() => {
-    const element = document.getElementById("homeRegisterForm");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  }, 100);
-}
+    setTimeout(() => {
+      const element = document.getElementById("homeRegisterForm");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
   return (
     <>
       <section className="">
@@ -127,13 +126,15 @@ const homeRegisterForm = ()=>{
               </div>
 
               <h1 className="pt-2 courses-texted">
-                  <span className="live-projects-text">Python Full Stack Development Course</span>
-                  <br></br>
-                  <span className="live-projects-text"> in Chennai </span>
+                <span className="live-projects-text">
+                  Python Full Stack Development Course
+                </span>
+                <br></br>
+                <span className="live-projects-text"> in Chennai </span>
               </h1>
 
               <h2 className="live-projects-text">
-              {` \{ 3 Months Course + 2 Months Internship \} `}
+                {` \{ 3 Months Course + 2 Months Internship \} `}
               </h2>
               <hr className="border-white w-75"></hr>
               <div className="courses-description pt-3">
@@ -147,10 +148,12 @@ const homeRegisterForm = ()=>{
                   </div>
                   <div>
                     <div className="courses-number pt-1">
-                    Have any questions? Give us a call                   </div>
+                      Have any questions? Give us a call{" "}
+                    </div>
                     <a href="tel:+918122869706" className="courses-number">
                       +91 8122869706
-                    </a>                    </div>
+                    </a>{" "}
+                  </div>
                 </div>
               </div>
             </div>
@@ -324,12 +327,12 @@ const homeRegisterForm = ()=>{
                   </div>
                 </div>
                 <div className="courses-trainig-details mt-4">
-                  Our Python and Django training course offers a hands-on,
-                  in-depth learning experience for aspiring developers. You will
-                  start with Python fundamentals—covering syntax, data types,
-                  operators, and control structures—before advancing to more
-                  complex concepts like object-oriented programming and error
-                  handling.
+                  Our Full Stack Python course in Chennai course offers a
+                  hands-on, in-depth learning experience for aspiring
+                  developers. You will start with Python fundamentals—covering
+                  syntax, data types, operators, and control structures—before
+                  advancing to more complex concepts like object-oriented
+                  programming and error handling.
                 </div>
                 <div className="courses-trainig-details mt-4">
                   In the Django module, you will learn to build dynamic web
@@ -372,10 +375,26 @@ const homeRegisterForm = ()=>{
                   alt="Visual Studio Code tools used in Aryu Academy’s Python course for writing and debugging code"
                   className="tool-used-image"
                 />
-                <img src={Git} alt="Git tools used in Aryu Academy’s Python course for version control and collaboration on projects." className="tool-used-image" />
-                <img src={Postman} alt="Postman tool used in Aryu Academy’s Python course for testing APIs and ensuring smooth communication." className="tool-used-image" />
-                <img src={Django} alt="Django tools used in Aryu Academy’s Python course for building robust web applications and backend systems." className="tool-used-image" />
-                <img src={Flask} alt="Flask tools used in Aryu Academy’s Python course for creating lightweight web applications and APIs." className="tool-used-image" />
+                <img
+                  src={Git}
+                  alt="Git tools used in Aryu Academy’s Python course for version control and collaboration on projects."
+                  className="tool-used-image"
+                />
+                <img
+                  src={Postman}
+                  alt="Postman tool used in Aryu Academy’s Python course for testing APIs and ensuring smooth communication."
+                  className="tool-used-image"
+                />
+                <img
+                  src={Django}
+                  alt="Django tools used in Aryu Academy’s Python course for building robust web applications and backend systems."
+                  className="tool-used-image"
+                />
+                <img
+                  src={Flask}
+                  alt="Flask tools used in Aryu Academy’s Python course for creating lightweight web applications and APIs."
+                  className="tool-used-image"
+                />
                 <img
                   src={BeautifulSoup}
                   alt="php"
@@ -469,19 +488,29 @@ const homeRegisterForm = ()=>{
             <div className="position-absolute image-content d-flex justify-content-between p-3 ">
               <div className="pt-2">
                 <div className="  type-of-course-about-images ">
-                Looking for More Info? We’ve Got You Covered!
+                  Looking for More Info? We’ve Got You Covered!
                   {/* Achieve Your Goals With
                   <span className="type-of-course-create-about mx-3">
                     Aryu Academy
                   </span> */}
                 </div>
                 <div className="reg-text mt-2">
-                Find the answers you’re looking for and see how Aryu Academy can build a successful career.
+                  Find the answers you’re looking for and see how Aryu Academy
+                  can build a successful career.
                 </div>
-                <button className="courses-reg-btn mt-2" onClick={homeRegisterForm}>Contact Us</button>
+                <button
+                  className="courses-reg-btn mt-2"
+                  onClick={homeRegisterForm}
+                >
+                  Contact Us
+                </button>
               </div>
               <div>
-                <img src={Coursesgirl} alt="This image shows a woman holding documents. Get in touch to start your journey with Aryu Academy today!" className="courses-girl" />
+                <img
+                  src={Coursesgirl}
+                  alt="This image shows a woman holding documents. Get in touch to start your journey with Aryu Academy today!"
+                  className="courses-girl"
+                />
               </div>
             </div>
           </div>
@@ -496,7 +525,7 @@ const homeRegisterForm = ()=>{
             </div>
           </div>
           <div className="moduals-courses pt-4">
-          3 Months Course + 2 Months Internship
+            3 Months Course + 2 Months Internship
           </div>
         </section>
         <section className="accordion">
@@ -893,7 +922,11 @@ const homeRegisterForm = ()=>{
               </div>
             </div>
             <div>
-              <img src={Certification} alt="Get an Industry-Recognized Certification in Python from ARYU Academy – 6-Month Course Completion." className="student-certificate" />
+              <img
+                src={Certification}
+                alt="Get an Industry-Recognized Certification in Python from ARYU Academy – 6-Month Course Completion."
+                className="student-certificate"
+              />
             </div>
           </div>
         </section>
@@ -906,7 +939,11 @@ const homeRegisterForm = ()=>{
               <div className="benefits-head">Training Benefits</div>
               <div className="benefits-line"></div>
               <div className="courses-trainig-benefits-para mt-5">
-              Offers personalized one-on-one guidance, tailored to your goals, helping you overcome challenges, refine skills, and achieve personal and professional growth.
+                Aryu Academy’s Full Stack Development Course Training in Chennai. Led
+                by industry professionals, this course provides 100% practical
+                training with live projects, career guidance, and interview
+                preparation. We also offer lifetime support to ensure your
+                growth.{" "}
               </div>
               <div className="d-flex justify-content-between">
                 <div className="text-center benefits-complete-box mt-4 pt-2 ">
